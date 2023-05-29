@@ -1,4 +1,4 @@
-; Sun May 28 23:19:26 EDT 2023
+; Mon May 29 13:51:10 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1569,12 +1569,16 @@
 
 ([biabok_Class0] of  Value_Stream
 
+	(description "The end-to-end perspective of activities necessary for establishing a new or updating an existing agreement.")
 	(name "Establish Financial Agreement (EFA)")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30041]
+		[biabok_Class40060])
 	(vs_trigger_events [biabok_Class1])
 	(vs_value_stages
 		[biabok_Class2]
@@ -2368,12 +2372,20 @@
 
 ([biabok_Class20054] of  Value_Stream
 
+	(description "The end to end perspective of activities necessary for the termination of an existing agreement with either one, more or all parties of the agreement, leading to things such as exchanging asset(s) ownership and settlement of financial accounts.")
 	(name "Terminate Financial Agreement (TFA)")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30003]
+		[biabok_Class30040]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class40060]
+		[biabok_Class40079])
 	(vs_trigger_events [biabok_Class20055])
 	(vs_value_stages
 		[biabok_Class20056]
@@ -2509,6 +2521,7 @@
 		[biabok_Class40019]
 		[biabok_Class40023])
 	(name "Product")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2530,6 +2543,7 @@
 		[biabok_Class40025]
 		[biabok_Class40027])
 	(name "Customer")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2544,6 +2558,7 @@
 		[biabok_Class40023]
 		[biabok_Class40021])
 	(name "Channel")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2554,6 +2569,7 @@
 
 	(inverse_of_valuestage_to_infoconcept [biabok_Class10])
 	(name "Message")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2567,6 +2583,7 @@
 		[biabok_Class40025]
 		[biabok_Class40027])
 	(name "Financial Account")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2575,6 +2592,7 @@
 
 ([biabok_Class20072] of  Information_Concept
 
+	(description "A set of legally binding rights and obligations between two or more legal entities.")
 	(inverse_of_valuestage_to_infoconcept
 		[biabok_Class2]
 		[biabok_Class4]
@@ -2584,6 +2602,35 @@
 		[biabok_Class12]
 		[biabok_Class40025])
 	(name "Agreement")
+	(related_from_information_concepts [biabok_Class20072])
+	(related_information_concepts
+		[biabok_Class50000]
+		[biabok_Class20071]
+		[biabok_Class40105]
+		[biabok_Class40110]
+		[biabok_Class40111]
+		[biabok_Class20070]
+		[biabok_Class20072]
+		[biabok_Class20077]
+		[biabok_Class40100]
+		[biabok_Class40102]
+		[biabok_Class40108]
+		[biabok_Class20068]
+		[biabok_Class40104]
+		[biabok_Class40112]
+		[biabok_Class40114]
+		[biabok_Class20067]
+		[biabok_Class50001]
+		[biabok_Class40119]
+		[biabok_Class40095]
+		[biabok_Class40107]
+		[biabok_Class40097]
+		[biabok_Class20069]
+		[biabok_Class20074]
+		[biabok_Class50005]
+		[biabok_Class50004]
+		[biabok_Class50002]
+		[biabok_Class50003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2609,6 +2656,7 @@
 		[biabok_Class10]
 		[biabok_Class40021])
 	(name "Partner")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2643,6 +2691,7 @@
 
 	(inverse_of_valuestage_to_infoconcept [biabok_Class8])
 	(name "Collateral")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -2757,7 +2806,7 @@
 ([biabok_Class30008] of  Group_Business_Role
 
 	(external_to_enterprise FALSE)
-	(name "Asset REquest Evaluator")
+	(name "Asset Request Evaluator")
 	(role_is_external FALSE)
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -3290,6 +3339,12 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30005]
+		[biabok_Class30024]
+		[biabok_Class40033]
+		[biabok_Class40042]
+		[biabok_Class40064])
 	(vs_value_stages
 		[biabok_Class40007]
 		[biabok_Class40009]
@@ -4080,7 +4135,7 @@
 ([biabok_Class40072] of  Group_Business_Role
 
 	(external_to_enterprise FALSE)
-	(name "REcuriter")
+	(name "Recuriter")
 	(role_is_external FALSE)
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -4333,6 +4388,7 @@
 ([biabok_Class40095] of  Information_Concept
 
 	(name "Asset")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4352,6 +4408,7 @@
 ([biabok_Class40097] of  Information_Concept
 
 	(name "Business Entity")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4379,6 +4436,7 @@
 ([biabok_Class40100] of  Information_Concept
 
 	(name "Content")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4397,6 +4455,7 @@
 ([biabok_Class40102] of  Information_Concept
 
 	(name "Facility")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4416,6 +4475,7 @@
 ([biabok_Class40104] of  Information_Concept
 
 	(name "Human Resource")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4425,6 +4485,7 @@
 ([biabok_Class40105] of  Information_Concept
 
 	(name "Incident")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4446,6 +4507,7 @@
 		[biabok_Class40019]
 		[biabok_Class40021])
 	(name "Inquiry")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4455,6 +4517,7 @@
 ([biabok_Class40108] of  Information_Concept
 
 	(name "Intellectual Property Rights")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4474,6 +4537,7 @@
 ([biabok_Class40110] of  Information_Concept
 
 	(name "Investment Portfolio")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4483,6 +4547,7 @@
 ([biabok_Class40111] of  Information_Concept
 
 	(name "Job")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4492,6 +4557,7 @@
 ([biabok_Class40112] of  Information_Concept
 
 	(name "Legal Proceeding")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4511,6 +4577,7 @@
 
 	(inverse_of_valuestage_to_infoconcept [biabok_Class40025])
 	(name "Order")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4558,6 +4625,7 @@
 
 	(inverse_of_valuestage_to_infoconcept [biabok_Class40027])
 	(name "Time")
+	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
@@ -4581,6 +4649,658 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE))
+
+([biabok_Class50000] of  Information_Concept
+
+	(name "Decision")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50001] of  Information_Concept
+
+	(name "Tax")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50002] of  Information_Concept
+
+	(name "Payment")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50003] of  Information_Concept
+
+	(name "Policy")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50004] of  Information_Concept
+
+	(name "Financial Transaction")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50005] of  Information_Concept
+
+	(name "Agreement Term")
+	(related_from_information_concepts [biabok_Class20072])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50006] of  Value_Stream
+
+	(description "The end-to-end perspective of acquiring an asset, from initiating and approving the asset request to sourcing and processing procurement orders and delivering the asset to the requester.")
+	(name "Acquire Asset (AA)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_outcome_conditions [biabok_Class50007])
+	(vs_trigger_business_roles [biabok_Class30009])
+	(vs_value_stages
+		[biabok_Class50008]
+		[biabok_Class50010]
+		[biabok_Class50012]
+		[biabok_Class50014]
+		[biabok_Class50016]
+		[biabok_Class50018]))
+
+([biabok_Class50007] of  Business_Condition
+
+	(name "Asset acquired")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50008] of  Value_Stage
+
+	(description "The act of submitting a request for a new asset.")
+	(name "Acquire Asset (AA): 1. AA - Request Asset")
+	(performance_measures [biabok_Class50028])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50020])
+	(vsg_exit_conditions [biabok_Class50021])
+	(vsg_index 1)
+	(vsg_label [biabok_Class50009])
+	(vsg_participants
+		[biabok_Class30007]
+		[biabok_Class30009]
+		[biabok_Class40062]
+		[biabok_Class40063])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50009] of  Label
+
+	(name "AA - Request Asset")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50010] of  Value_Stage
+
+	(description "The act of validating that the asset request meets the procurement, financial, and business justification criteria.")
+	(name "Acquire Asset (AA): 2. AA - Approve Request")
+	(performance_measures [biabok_Class50029])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50020])
+	(vsg_exit_conditions [biabok_Class50022])
+	(vsg_index 2)
+	(vsg_label [biabok_Class50011])
+	(vsg_participants
+		[biabok_Class30008]
+		[biabok_Class30009]
+		[biabok_Class30019]
+		[biabok_Class40004]
+		[biabok_Class40063])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50011] of  Label
+
+	(name "AA - Approve Request")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50012] of  Value_Stage
+
+	(description "The act of evaluating and selecting the supplier for the asset.")
+	(name "Acquire Asset (AA): 3. AA - Source Order")
+	(performance_measures [biabok_Class50030])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50022])
+	(vsg_exit_conditions [biabok_Class50023])
+	(vsg_index 3)
+	(vsg_label [biabok_Class50013])
+	(vsg_participants
+		[biabok_Class40062]
+		[biabok_Class40086])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50013] of  Label
+
+	(name "AA - Source Order")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50014] of  Value_Stage
+
+	(description "Optional value stream stage in which a single agreement or master services agreement is established to facilitate an order.")
+	(name "Acquire Asset (AA): 4. AA - Finalize Partner Agreement")
+	(performance_measures [biabok_Class50031])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50024])
+	(vsg_exit_conditions [biabok_Class50025])
+	(vsg_index 4)
+	(vsg_label [biabok_Class50015])
+	(vsg_participants
+		[biabok_Class30009]
+		[biabok_Class40062]
+		[biabok_Class40063]
+		[biabok_Class40084])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50015] of  Label
+
+	(name "AA - Finalize Partner Agreement")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50016] of  Value_Stage
+
+	(description "The act of placing a procurement order to acquire the asset.")
+	(name "Acquire Asset (AA): 5. AA - Place Order")
+	(performance_measures [biabok_Class50032])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50023])
+	(vsg_exit_conditions [biabok_Class50026])
+	(vsg_index 5)
+	(vsg_label [biabok_Class50017])
+	(vsg_participants
+		[biabok_Class30004]
+		[biabok_Class30009]
+		[biabok_Class40062]
+		[biabok_Class40084])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50017] of  Label
+
+	(name "AA - Place Order")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50018] of  Value_Stage
+
+	(description "The act of fulfilling the order, receiving the asset, and accounting for the asset.")
+	(name "Acquire Asset (AA): 6. AA - Receive Asset")
+	(performance_measures [biabok_Class50033])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_entrance_conditions [biabok_Class50026])
+	(vsg_exit_conditions [biabok_Class50027])
+	(vsg_index 6)
+	(vsg_label [biabok_Class50019])
+	(vsg_participants [biabok_Class30009])
+	(vsg_value_stream [biabok_Class50006]))
+
+([biabok_Class50019] of  Label
+
+	(name "AA - Receive Asset")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50020] of  Business_Condition
+
+	(name "Asset order initiated")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50021] of  Business_Condition
+
+	(name "Asset order acknowledged")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50022] of  Business_Condition
+
+	(name "Asset order approved")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50023] of  Business_Condition
+
+	(name "Supplier selected")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50024] of  Business_Condition
+
+	(name "Agreement requested")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50025] of  Business_Condition
+
+	(name "Agreement executed")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50026] of  Business_Condition
+
+	(name "Asset order placed")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50027] of  Business_Condition
+
+	(name "Asset received")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50028] of  Business_Performance_Measure
+
+	(name "Asset requested")
+	(pm_measured_element [biabok_Class50008])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50029] of  Business_Performance_Measure
+
+	(name "Asset request validated")
+	(pm_measured_element [biabok_Class50010])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50030] of  Business_Performance_Measure
+
+	(name "Asset order sourced")
+	(pm_measured_element [biabok_Class50012])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50031] of  Business_Performance_Measure
+
+	(name "Agreement enabling asset ordering")
+	(pm_measured_element [biabok_Class50014])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50032] of  Business_Performance_Measure
+
+	(name "Asset order processed")
+	(pm_measured_element [biabok_Class50016])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50033] of  Business_Performance_Measure
+
+	(name "Asset requester received asset")
+	(pm_measured_element [biabok_Class50018])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50034] of  Value_Stream
+
+	(description "The end-to-end perspective of determining the degree to which the organization is adhering to established policies and regulations.")
+	(name "Conduct Audit (CA)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30030]
+		[biabok_Class40001]))
+
+([biabok_Class50035] of  Value_Stream
+
+	(description "The end-to-end perspective of creating and updating a policy that governs how the organization operates and how customers and partners engage with the organization or with each other.")
+	(name "Create Policy (CP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30012]
+		[biabok_Class30025]
+		[biabok_Class30034]
+		[biabok_Class30041]
+		[biabok_Class40046]
+		[biabok_Class40074]
+		[biabok_Class40079]))
+
+([biabok_Class50036] of  Value_Stream
+
+	(description "The end-to-end perspective of planning and executing an initiative.")
+	(name "Deliver Initiative (DI)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class40000]))
+
+([biabok_Class50037] of  Value_Stream
+
+	(description "The end-to-end perspective of planning and executing a meeting or other interaction.")
+	(name "Deliver Meeting (DM)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30041]
+		[biabok_Class40036]
+		[biabok_Class40060]))
+
+([biabok_Class50038] of  Value_Stream
+
+	(description "The end-to-end perspective of planning, executing, and communicating training course for the purpose of increasing knowledge.")
+	(name "Deliver Training (DT)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30041]
+		[biabok_Class40036]
+		[biabok_Class40060]))
+
+([biabok_Class50039] of  Value_Stream
+
+	(description "The end-to-end perspective of making an asset available for use within the organization and to the individual(s) requesting the asset.")
+	(name "Deploy Asset (DA)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30007]
+		[biabok_Class30009]
+		[biabok_Class40060]))
+
+([biabok_Class50040] of  Value_Stream
+
+	(description "The end-to-end perspective of activities necessary for the introduction of a new or modified product.")
+	(name "Develop and Launch Product (DLP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class40064]))
+
+([biabok_Class50041] of  Value_Stream
+
+	(description "The end-to-end perspective of developing an individual's career, from performance assessment to skills and experience enhancement and individual redeployment.")
+	(name "Develop Human Resource Career (DHRC)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class40036]
+		[biabok_Class40048]))
+
+([biabok_Class50042] of  Value_Stream
+
+	(description "The end-to-end perspective of requesting, creating, and delivering information.")
+	(name "Disseminate Information (DI)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class40077]))
+
+([biabok_Class50043] of  Value_Stream
+
+	(description "The end-to-end perspective of ensuring conformance with legislation and organization-driven policies, from identifying compliance requirements, implementing controls, evaluating controls' effectiveness, addressing compliance incidents, and reporting compliance as required.")
+	(name "Ensure Policy Compliance (EPC)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30030]
+		[biabok_Class30035]
+		[biabok_Class40074]
+		[biabok_Class40078]))
+
+([biabok_Class50044] of  Value_Stream
+
+	(description "The end-to-end perspective determining the plan holders' financial needs, goals, and risk tolerance, and establishing or updating a plan designed to meet those goals that balances risk with financial return taking into account current positions and external forces.")
+	(name "Establish Financial Plan (EFP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30003]
+		[biabok_Class30014]
+		[biabok_Class30025]
+		[biabok_Class30041]
+		[biabok_Class40034]
+		[biabok_Class40042]))
+
+([biabok_Class50045] of  Value_Stream
+
+	(description "The end- to-end perspective of activities necessary for establishing or updating an investment portfolio based on the portfolio's goals, strategy, current positions, risk, and market.")
+	(name "Establish Investment Portfolio (EIP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30003]
+		[biabok_Class30014]
+		[biabok_Class30025]
+		[biabok_Class30041]
+		[biabok_Class40034]
+		[biabok_Class40042]))
+
+([biabok_Class50046] of  Value_Stream
+
+	(description "The end-to-end perspective of executing a campaign, from identifying the need for a campaign to planning, designing, implementing, and measuring the effectiveness of the campaign.")
+	(name "Execute Campaign (EC)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class30020]))
+
+([biabok_Class50047] of  Value_Stream
+
+	(description "The end-to-end perspective of activities involved in completing a financial transaction.")
+	(name "Execute Financial Transaction (EFT)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30000]
+		[biabok_Class40060]))
+
+([biabok_Class50048] of  Value_Stream
+
+	(description "The end-to-end perspective of identifying, exploring, and selecting an individual to fill a need within an organization.")
+	(name "Onboard Human Resource (OHR)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class40035]))
+
+([biabok_Class50049] of  Value_Stream
+
+	(description "The end-to-end perspective of identifying, commencing, and updating relationships with other organizations for mutual benefit.")
+	(name "Onboard Partner (OP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class40060]
+		[biabok_Class40061]))
+
+([biabok_Class50050] of  Value_Stream
+
+	(description "The end-to-end perspective of activities necessary to track and resolve an issue or exception reported by a customer or other stakeholder.")
+	(name "Resolve Issue or Inquiry (RII)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30041]
+		[biabok_Class30000]
+		[biabok_Class40060]))
+
+([biabok_Class50051] of  Value_Stream
+
+	(description "The end-to-end set of activities necessary for determining, communicating, and settling (exchanging funds against) a payment obligation.")
+	(name "Settle Payment Obligation (SPO)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles
+		[biabok_Class30041]
+		[biabok_Class40036]
+		[biabok_Class40060]))
+
+([biabok_Class50052] of  Value_Stream
+
+	(description "The end-to-end perspective of executing a financial instrument trade, including clearing and settlement.")
+	(name "Trade Financial Instrument (TFI)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class40043]))
 
 ([biabok_Class6] of  Value_Stage
 
