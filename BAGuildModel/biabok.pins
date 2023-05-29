@@ -1,4 +1,4 @@
-; Sun May 28 18:09:33 EDT 2023
+; Sun May 28 23:03:03 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -2504,7 +2504,10 @@
 
 ([biabok_Class20067] of  Information_Concept
 
-	(inverse_of_valuestage_to_infoconcept [biabok_Class4])
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class4]
+		[biabok_Class40019]
+		[biabok_Class40023])
 	(name "Product")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2520,7 +2523,12 @@
 		[biabok_Class6]
 		[biabok_Class8]
 		[biabok_Class10]
-		[biabok_Class12])
+		[biabok_Class12]
+		[biabok_Class40019]
+		[biabok_Class40023]
+		[biabok_Class40021]
+		[biabok_Class40025]
+		[biabok_Class40027])
 	(name "Customer")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2532,7 +2540,9 @@
 
 	(inverse_of_valuestage_to_infoconcept
 		[biabok_Class2]
-		[biabok_Class4])
+		[biabok_Class4]
+		[biabok_Class40023]
+		[biabok_Class40021])
 	(name "Channel")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2552,7 +2562,10 @@
 
 ([biabok_Class20071] of  Information_Concept
 
-	(inverse_of_valuestage_to_infoconcept [biabok_Class8])
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class8]
+		[biabok_Class40025]
+		[biabok_Class40027])
 	(name "Financial Account")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2568,7 +2581,8 @@
 		[biabok_Class6]
 		[biabok_Class8]
 		[biabok_Class10]
-		[biabok_Class12])
+		[biabok_Class12]
+		[biabok_Class40025])
 	(name "Agreement")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2592,7 +2606,8 @@
 		[biabok_Class2]
 		[biabok_Class6]
 		[biabok_Class8]
-		[biabok_Class10])
+		[biabok_Class10]
+		[biabok_Class40021])
 	(name "Partner")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2604,7 +2619,9 @@
 
 	(inverse_of_valuestage_to_infoconcept
 		[biabok_Class2]
-		[biabok_Class8])
+		[biabok_Class8]
+		[biabok_Class40021]
+		[biabok_Class40027])
 	(name "Location")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -2655,7 +2672,7 @@
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE))
 
-([biabok_Class30000] of  Business_Role_Type
+([biabok_Class30000] of  Group_Business_Role
 
 	(name "Internal Stakeholder")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -3197,6 +3214,1364 @@
 		[biabok_Class20044]
 		[biabok_Class20051])
 	(vsg_value_stream [biabok_Class0]))
+
+([biabok_Class40000] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Executive Sponsor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40001] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "External Regulator")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40002] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Facilitator")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40003] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Facility Specialist")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40004] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Finance Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40005] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Finance Specialist")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40006] of  Value_Stream
+
+	(description "The end-to-end perspective of acquiring the servicing rights for a loan portfolio, which in essence is an agreement portfolio comprised of loan agreements, that had previously been serviced by a business partner, where ownership of the note stays with the owner of the loan and certain legal documents are taken over depending on the agreement.")
+	(name "Acquire Servicing Portfolio (ASP)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_value_stages
+		[biabok_Class40007]
+		[biabok_Class40009]
+		[biabok_Class40011]
+		[biabok_Class40013]
+		[biabok_Class40015]))
+
+([biabok_Class40007] of  Value_Stage
+
+	(description "A party looks to identify for buyers or sellers of rights to a specific servicing portfolio.")
+	(name "Acquire Servicing Portfolio (ASP): 1. ASP - Initiate Servicing Acquisition Inquiry")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_index 1)
+	(vsg_label [biabok_Class40008])
+	(vsg_value_stream [biabok_Class40006]))
+
+([biabok_Class40008] of  Label
+
+	(name "ASP - Initiate Servicing Acquisition Inquiry")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40009] of  Value_Stage
+
+	(description "Request documents or perform required activities necessary to assess the risk and meet compliance requirements of the transaction.")
+	(name "Acquire Servicing Portfolio (ASP): 2. ASP - Conduct Servicing Portfolio Due Diligence")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_index 2)
+	(vsg_label [biabok_Class40010])
+	(vsg_value_stream [biabok_Class40006]))
+
+([biabok_Class40010] of  Label
+
+	(name "ASP - Conduct Servicing Portfolio Due Diligence")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40011] of  Value_Stage
+
+	(description "Draft servicing agreement and close transaction.")
+	(name "Acquire Servicing Portfolio (ASP): 3. ASP - Complete Servicing Portfolio Purchase Settlement")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_index 3)
+	(vsg_label [biabok_Class40012])
+	(vsg_value_stream [biabok_Class40006]))
+
+([biabok_Class40012] of  Label
+
+	(name "ASP - Complete Servicing Portfolio Purchase Settlement")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40013] of  Value_Stage
+
+	(description "Establish servicing portfolio assets at new institution.")
+	(name "Acquire Servicing Portfolio (ASP): 4. ASP - Finalize Servicing Portfolio Acquisition")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_index 4)
+	(vsg_label [biabok_Class40014])
+	(vsg_value_stream [biabok_Class40006]))
+
+([biabok_Class40014] of  Label
+
+	(name "ASP - Finalize Servicing Portfolio Acquisition")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40015] of  Value_Stage
+
+	(description "Set up and communicate appropriate financial account payment scheduling details and services.")
+	(name "Acquire Servicing Portfolio (ASP): 5. APS - Onboard Servicing Portfolio")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vsg_index 5)
+	(vsg_label [biabok_Class40016])
+	(vsg_value_stream [biabok_Class40006]))
+
+([biabok_Class40016] of  Label
+
+	(name "APS - Onboard Servicing Portfolio")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40017] of  Value_Stream
+
+	(description "Order foreign currency through exchanging with your local currency for either cross-border trades payment or oversea travel purpose.")
+	(name "Ordering Foreign Currency (OFC)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_trigger_business_roles [biabok_Class30041])
+	(vs_trigger_events [biabok_Class40018])
+	(vs_value_stages
+		[biabok_Class40019]
+		[biabok_Class40021]
+		[biabok_Class40023]
+		[biabok_Class40025]
+		[biabok_Class40027]))
+
+([biabok_Class40018] of  External_Business_Event
+
+	(name "Obtain Foreign Currency")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40019] of  Value_Stage
+
+	(description "Decide the target current and amount")
+	(name "Ordering Foreign Currency (OFC): 1. OFC - Initiate Request by Deciding Target Currency Type to Obtain")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20068]
+		[biabok_Class40107]
+		[biabok_Class40115]
+		[biabok_Class20067])
+	(vsg_index 1)
+	(vsg_label [biabok_Class40020])
+	(vsg_participants [biabok_Class30041])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20027])
+	(vsg_value_stream [biabok_Class40017]))
+
+([biabok_Class40020] of  Label
+
+	(name "OFC - Initiate Request by Deciding Target Currency Type to Obtain")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40021] of  Value_Stage
+
+	(description "Explore and choose proper channel for foreign current acquiring, confirming exchange rates and processing fee")
+	(name "Ordering Foreign Currency (OFC): 2. OFC - Select Financial Institutes (Online) or Koisk (Offline)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class40096]
+		[biabok_Class20069]
+		[biabok_Class20068]
+		[biabok_Class40107]
+		[biabok_Class20075]
+		[biabok_Class20074])
+	(vsg_index 2)
+	(vsg_label [biabok_Class40022])
+	(vsg_participants
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class30043]
+		[biabok_Class30000])
+	(vsg_required_business_capabilities
+		[biabok_Class20011]
+		[biabok_Class20012])
+	(vsg_value_stream [biabok_Class40017]))
+
+([biabok_Class40022] of  Label
+
+	(name "OFC - Select Financial Institutes (Online) or Koisk (Offline)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40023] of  Value_Stage
+
+	(description "Decide whether to get exchanged currency via online banking, or directly onsite, or asking financial institute to delivery to home")
+	(name "Ordering Foreign Currency (OFC): 3. OFC - Select Delivery Method")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20069]
+		[biabok_Class20068]
+		[biabok_Class40109]
+		[biabok_Class20067])
+	(vsg_index 3)
+	(vsg_label [biabok_Class40024])
+	(vsg_participants
+		[biabok_Class30041]
+		[biabok_Class30042])
+	(vsg_required_business_capabilities
+		[biabok_Class20049]
+		[biabok_Class20012]
+		[biabok_Class20014])
+	(vsg_value_stream [biabok_Class40017]))
+
+([biabok_Class40024] of  Label
+
+	(name "OFC - Select Delivery Method")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40025] of  Value_Stage
+
+	(description "Review your order (online) or koisk offer (offline) and use your bank account or cash to complete your payment.\nFinancial institute processing the payment and issue the exchanged foreign currency, receive the processing fee.")
+	(name "Ordering Foreign Currency (OFC): 4. OFC - Complete Payment and Process Exchanging")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20072]
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class40103]
+		[biabok_Class40114])
+	(vsg_index 4)
+	(vsg_label [biabok_Class40026])
+	(vsg_participants
+		[biabok_Class30041]
+		[biabok_Class40093]
+		[biabok_Class30000])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20019])
+	(vsg_value_stream [biabok_Class40017]))
+
+([biabok_Class40026] of  Label
+
+	(name "OFC - Complete Payment and Process Exchanging")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40027] of  Value_Stage
+
+	(description "Once submit your order (online), you should be able to see the Confirmation Screen. Also you can track your order.\nOnce purchase offline, get receipt to confirm the foreign currency exchange is completed.")
+	(name "Ordering Foreign Currency (OFC): 5. OFC - Confirmation and Check the Completion Status")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class20075]
+		[biabok_Class40119])
+	(vsg_index 5)
+	(vsg_label [biabok_Class40028])
+	(vsg_participants
+		[biabok_Class30041]
+		[biabok_Class30000])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20019])
+	(vsg_value_stream [biabok_Class40017]))
+
+([biabok_Class40028] of  Label
+
+	(name "OFC - Confirmation and Check the Completion Status")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40029] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Account Holder")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40030] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Analyst")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40031] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Controller")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40032] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Instrument Analyst")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40033] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Instrument Sales Advisor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40034] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Financial Planner")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40035] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Hiring Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40036] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Human Resource")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40037] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Human Resource Analyst")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40038] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Initiating Stakeholder")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40039] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Internal Firm")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40040] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Investment Account Holder")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40041] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Investment Committee")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40042] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Investment Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40043] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Investor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40044] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "IT Engineer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40045] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "IT Technology Specialist")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40046] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Legal Counsel")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40047] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Legal Officer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40048] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40049] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Market Maker")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40050] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Marketing Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40051] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Attendee")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40052] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeeting Caterer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40053] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Host")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40054] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Organizer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40055] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Participant")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40056] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Sponsor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40057] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Meeting Technician")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40058] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Mentor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40059] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Operations Analyst")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40060] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Partner")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40061] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Partnering Officer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40062] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Procurement Team Member")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40063] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Procurer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40064] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Product Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40065] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Product Owner")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40066] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Product Specialist")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40067] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Program Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40068] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Program Team Member")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40069] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Project/Program Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40070] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Public Records Administrator")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40071] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Quality Assurance Analyst")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40072] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "REcuriter")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40073] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Registered Representative")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40074] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Regulator")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40075] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Regulatory Auditor")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40076] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Relationship Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40077] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Requester")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40078] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Risk Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40079] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Risk Officer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40080] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Security Trading Organization")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40081] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Sponsoring Team Member")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40082] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Stock Exchange Broker")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40083] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Strategist")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40084] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Supplier")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40085] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Technology Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40086] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Tester")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40087] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Trader")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40088] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Trainer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40089] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Training Program Manager")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40090] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Training Recipient")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40091] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Training Team Member")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40092] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Treasurer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40093] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Trust Bank (Custodian)")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40094] of  Group_Business_Role
+
+	(external_to_enterprise FALSE)
+	(name "Wholesale Customer")
+	(role_is_external FALSE)
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40095] of  Information_Concept
+
+	(name "Asset")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40096] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40021])
+	(name "Brand")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40097] of  Information_Concept
+
+	(name "Business Entity")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40098] of  Information_Concept
+
+	(name "Campaign")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40099] of  Information_Concept
+
+	(name "Competency")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40100] of  Information_Concept
+
+	(name "Content")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40101] of  Information_Concept
+
+	(name "Event")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40102] of  Information_Concept
+
+	(name "Facility")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40103] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40025])
+	(name "Financial Instrument")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40104] of  Information_Concept
+
+	(name "Human Resource")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40105] of  Information_Concept
+
+	(name "Incident")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40106] of  Information_Concept
+
+	(name "Initiative")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40107] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class40019]
+		[biabok_Class40021])
+	(name "Inquiry")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40108] of  Information_Concept
+
+	(name "Intellectual Property Rights")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40109] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40023])
+	(name "Interaction")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40110] of  Information_Concept
+
+	(name "Investment Portfolio")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40111] of  Information_Concept
+
+	(name "Job")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40112] of  Information_Concept
+
+	(name "Legal Proceeding")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40113] of  Information_Concept
+
+	(name "Market")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40114] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40025])
+	(name "Order")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40115] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40019])
+	(name "Plan")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40116] of  Information_Concept
+
+	(name "Research")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40117] of  Information_Concept
+
+	(name "Schedule Element")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40118] of  Information_Concept
+
+	(name "Strategy")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40119] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class40027])
+	(name "Time")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class40120] of  Information_Concept
+
+	(name "Training Course")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
 
 ([biabok_Class5] of  Label
 
