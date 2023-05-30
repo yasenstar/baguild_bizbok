@@ -1,100 +1,100 @@
-; Mon May 29 17:49:27 EDT 2023
+; Mon May 29 23:11:23 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
 
-([annotation_biabok_ProjectKB_Class59] of  String
+([annotation_biabok_ProjectKB_Class77] of  String
 
 	(name "Change")
 	(string_value "context"))
 
-([annotation_biabok_ProjectKB_Class60] of  String
+([annotation_biabok_ProjectKB_Class78] of  String
 
 	(name "AnnotationStatus")
 	(string_value "description"))
 
-([annotation_biabok_ProjectKB_Class61] of  String
+([annotation_biabok_ProjectKB_Class79] of  String
 
 	(name "Ontology_Component")
 	(string_value "currentName"))
 
-([annotation_biabok_ProjectKB_Class62] of  String
+([annotation_biabok_ProjectKB_Class80] of  String
 
 	(name "LinguisticEntity")
 	(string_value "label{+%28}language{%29}"))
 
-([annotation_biabok_ProjectKB_Class63] of  String
+([annotation_biabok_ProjectKB_Class81] of  String
 
 	(name "Status")
 	(string_value "description"))
 
-([annotation_biabok_ProjectKB_Class64] of  String
+([annotation_biabok_ProjectKB_Class82] of  String
 
 	(name "ChangeStatus")
 	(string_value "description"))
 
-([annotation_biabok_ProjectKB_Class65] of  String
+([annotation_biabok_ProjectKB_Class83] of  String
 
 	(name "Proposal")
 	(string_value "subject"))
 
-([annotation_biabok_ProjectKB_Class66] of  String
+([annotation_biabok_ProjectKB_Class84] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([annotation_biabok_ProjectKB_Class67] of  String
+([annotation_biabok_ProjectKB_Class85] of  String
 
 	(name "Annotation")
 	(string_value "subject"))
 
-([annotation_biabok_ProjectKB_Class68] of  String
+([annotation_biabok_ProjectKB_Class86] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([annotation_biabok_ProjectKB_Class69] of  String
+([annotation_biabok_ProjectKB_Class87] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([annotation_biabok_ProjectKB_Class70] of  String
+([annotation_biabok_ProjectKB_Class88] of  String
 
 	(name "Timestamp")
 	(string_value "date"))
 
-([annotation_biabok_ProjectKB_Class71] of  String
+([annotation_biabok_ProjectKB_Class89] of  String
 
 	(name "Vote")
 	(string_value "subject"))
 
-([annotation_biabok_ProjectKB_Class72] of  String
+([annotation_biabok_ProjectKB_Class90] of  String
 
 	(name "User")
 	(string_value "name"))
 
-([annotation_biabok_ProjectKB_Class73] of  Map_Entry
+([annotation_biabok_ProjectKB_Class91] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([annotation_biabok_ProjectKB_Class74] of  Map_Entry
+([annotation_biabok_ProjectKB_Class92] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([annotation_biabok_ProjectKB_Class75] of  Map_Entry
+([annotation_biabok_ProjectKB_Class93] of  Map_Entry
 
 	(key "annotation_proj_exists")
 	(key_class "java.lang.String")
 	(value "yes")
 	(value_class "java.lang.String"))
 
-([annotation_biabok_ProjectKB_Class76] of  Map_Entry
+([annotation_biabok_ProjectKB_Class94] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
@@ -185,20 +185,20 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[annotation_biabok_ProjectKB_Class59]
-		[annotation_biabok_ProjectKB_Class60]
-		[annotation_biabok_ProjectKB_Class61]
-		[annotation_biabok_ProjectKB_Class62]
-		[annotation_biabok_ProjectKB_Class63]
-		[annotation_biabok_ProjectKB_Class64]
-		[annotation_biabok_ProjectKB_Class65]
-		[annotation_biabok_ProjectKB_Class66]
-		[annotation_biabok_ProjectKB_Class67]
-		[annotation_biabok_ProjectKB_Class68]
-		[annotation_biabok_ProjectKB_Class69]
-		[annotation_biabok_ProjectKB_Class70]
-		[annotation_biabok_ProjectKB_Class71]
-		[annotation_biabok_ProjectKB_Class72]))
+		[annotation_biabok_ProjectKB_Class77]
+		[annotation_biabok_ProjectKB_Class78]
+		[annotation_biabok_ProjectKB_Class79]
+		[annotation_biabok_ProjectKB_Class80]
+		[annotation_biabok_ProjectKB_Class81]
+		[annotation_biabok_ProjectKB_Class82]
+		[annotation_biabok_ProjectKB_Class83]
+		[annotation_biabok_ProjectKB_Class84]
+		[annotation_biabok_ProjectKB_Class85]
+		[annotation_biabok_ProjectKB_Class86]
+		[annotation_biabok_ProjectKB_Class87]
+		[annotation_biabok_ProjectKB_Class88]
+		[annotation_biabok_ProjectKB_Class89]
+		[annotation_biabok_ProjectKB_Class90]))
 
 ([changes_ProjectKB_Class10] of  Property_List
 )
@@ -4079,10 +4079,10 @@
 ([changes_ProjectKB_Instance_10131] of  Map
 
 	(entries
-		[annotation_biabok_ProjectKB_Class73]
-		[annotation_biabok_ProjectKB_Class74]
-		[annotation_biabok_ProjectKB_Class75]
-		[annotation_biabok_ProjectKB_Class76]))
+		[annotation_biabok_ProjectKB_Class91]
+		[annotation_biabok_ProjectKB_Class92]
+		[annotation_biabok_ProjectKB_Class93]
+		[annotation_biabok_ProjectKB_Class94]))
 
 ([changes_ProjectKB_Instance_120] of  Property_List
 

@@ -1,4 +1,4 @@
-; Mon May 29 17:49:21 EDT 2023
+; Mon May 29 23:11:09 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1705,6 +1705,17 @@
 
 ([biabok_Class10004] of  Business_Capability
 
+	(contained_business_capabilities
+		[biabok_Class50077]
+		[biabok_Class50078]
+		[biabok_Class50079]
+		[biabok_Class50080]
+		[biabok_Class50081]
+		[biabok_Class50082]
+		[biabok_Class50083]
+		[biabok_Class50084]
+		[biabok_Class50085]
+		[biabok_Class50086])
 	(description "Ability to establish, organize, analyze, administer, and report on all aspects of a name, symbol, or design that identifies and differentiates products, offerings, or organizational identities.")
 	(name "Brand Management")
 	(supports_business_capabilities [biabok_Class10001])
@@ -1718,8 +1729,8 @@
 
 	(buscap_to_parent_child_buscap [biabok_Class10001])
 	(buscap_to_parent_parent_buscap [biabok_Class10000])
-	(buscap_to_parent_role [essential_baseline_v3.5_Class4])
-	(relation_name "Financial Services Tier 1 supports Finanical Services Business Capability as Manage")
+	(buscap_to_parent_role [essential_baseline_v3.5_Class1])
+	(relation_name "Financial Services Tier 1 supports Finanical Services Business Capability as Front")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_ea_reference_instance_counter 0)
@@ -1740,8 +1751,8 @@
 
 	(buscap_to_parent_child_buscap [biabok_Class10003])
 	(buscap_to_parent_parent_buscap [biabok_Class10000])
-	(buscap_to_parent_role [essential_baseline_v3.5_Class0])
-	(relation_name "Financial Services Tier 3 supports Finanical Services Business Capability as Back")
+	(buscap_to_parent_role [essential_baseline_v3.5_Class1])
+	(relation_name "Financial Services Tier 3 supports Finanical Services Business Capability as Front")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_ea_reference_instance_counter 0)
@@ -1812,6 +1823,15 @@
 
 ([biabok_Class20000] of  Business_Capability
 
+	(contained_business_capabilities
+		[biabok_Class50095]
+		[biabok_Class50096]
+		[biabok_Class50097]
+		[biabok_Class50098]
+		[biabok_Class50099]
+		[biabok_Class50100]
+		[biabok_Class50101]
+		[biabok_Class50102])
 	(description "Ability to create, structure, and govern the legal body or bodies that comprises or comprise a single organization.")
 	(name "Business Entity Management")
 	(supports_business_capabilities [biabok_Class10001])
@@ -1823,6 +1843,17 @@
 
 ([biabok_Class20001] of  Business_Capability
 
+	(contained_business_capabilities
+		[biabok_Class50103]
+		[biabok_Class50104]
+		[biabok_Class50105]
+		[biabok_Class50106]
+		[biabok_Class50107]
+		[biabok_Class50108]
+		[biabok_Class50109]
+		[biabok_Class50110]
+		[biabok_Class50111]
+		[biabok_Class50112])
 	(description "Ability to identify the need for, plan, design, execute, and measure the effectiveness of an outreach activity that targets a specific population; for example, customers, human resources, partners, and patients, to achieve a certain goal, such as marketing awareness, hiring activities, and health awareness.")
 	(name "Campaign Management")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2248,6 +2279,7 @@
 
 ([biabok_Class20037] of  Business_Capability
 
+	(description "Ability to formulate and construct a binding agreement encompassing such things as levels of risk, pricing, terms and conditions, period, duration, and termination privileges.")
 	(name "Agreement Structuring")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2258,6 +2290,7 @@
 
 ([biabok_Class20038] of  Business_Capability
 
+	(description "Ability to capture, represent, analyze, and act upon explicit or implicit inclinations, leanings, likings, predispositions, penchants, or options — expressed formally or informally — as determined or derived from a combination of sources and associated with an agreement.")
 	(name "Agreement Perference Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2268,6 +2301,7 @@
 
 ([biabok_Class20039] of  Business_Capability
 
+	(description "Ability to manage the operation of an agreement from execution to termination and beyond, including amendments, renewals, implementation, notices, responses, termination, and retention.")
 	(name "Agreement Lifecycle Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2278,6 +2312,7 @@
 
 ([biabok_Class20040] of  Business_Capability
 
+	(description "Ability to verify and establish that an agreement is executed in accordance to the terms and conditions, preferences, policy, and good practice.")
 	(name "Agreement Compliance Determination")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2288,6 +2323,7 @@
 
 ([biabok_Class20041] of  Business_Capability
 
+	(description "Ability to identify, evaluate, assess, aggregate, articulate, and incorporate various exposures to harm, danger, or loss associated with an agreement.")
 	(name "Agreement Risk Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2298,6 +2334,7 @@
 
 ([biabok_Class20042] of  Business_Capability
 
+	(description "Ability to define, control, authorize, grant, restrict, and otherwise control the right to view, use, or modify an agreement.")
 	(name "Agreement Access Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2308,6 +2345,7 @@
 
 ([biabok_Class20043] of  Business_Capability
 
+	(description "Ability to articulate and evaluate the collective set of agreements with the intention of determining the value of, modifying, or optimizing the balance of that collective set of agreements.")
 	(name "Agreement Portfolio Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2318,6 +2356,7 @@
 
 ([biabok_Class20044] of  Business_Capability
 
+	(description "Ability to associate an agreement with other business objects.")
 	(name "Agreement Matching")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2328,6 +2367,7 @@
 
 ([biabok_Class20045] of  Business_Capability
 
+	(description "Ability to collect, organize, monitor, report on, or otherwise disseminate basic facts, statistics, attributes, and data about an agreement.")
 	(name "Agreement Information Management")
 	(supports_business_capabilities [biabok_Class20010])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -5540,7 +5580,10 @@
 		[biabok_Class20010]
 		[biabok_Class20012]
 		[biabok_Class20019]
-		[biabok_Class20007])
+		[biabok_Class20007]
+		[biabok_Class50072]
+		[biabok_Class50070]
+		[biabok_Class50074])
 	(vsg_value_stream [biabok_Class50053]))
 
 ([biabok_Class50059] of  Label
@@ -5589,7 +5632,8 @@
 	(vsg_required_business_capabilities
 		[biabok_Class20012]
 		[biabok_Class20019]
-		[biabok_Class20005])
+		[biabok_Class20005]
+		[biabok_Class50074])
 	(vsg_value_stream [biabok_Class50053]))
 
 ([biabok_Class50062] of  Label
@@ -5771,6 +5815,413 @@
 	(description "Ability to collect, organize, track, report on, or otherwise disseminate basic facts, statistics, attributes, and data about the financials of the organization.")
 	(name "Financial Information Management")
 	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50077] of  Business_Capability
+
+	(contained_business_capabilities
+		[biabok_Class50087]
+		[biabok_Class50088])
+	(description "Ability to establish and identify a brand.")
+	(name "Brand Definition")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50078] of  Business_Capability
+
+	(description "Ability to organize, aggregate, segment, and prioritize a collection of brands.")
+	(name "Brank Portfolio Management")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50079] of  Business_Capability
+
+	(contained_business_capabilities
+		[biabok_Class50089]
+		[biabok_Class50090]
+		[biabok_Class50091])
+	(description "Ability to determine how well a brand is meeting objectives or delivering against plan.")
+	(name "Brank Performance Management")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50080] of  Business_Capability
+
+	(description "Ability to assess and quantify the commitment and staying power that the brand has within the markets in which it has a presence.")
+	(name "Brank Loyalty Determination")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50081] of  Business_Capability
+
+	(description "Ability to assess and quantify the degree of familiarity and recognition a brand has within and across various markets.")
+	(name "Brand Awareness Determination")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50082] of  Business_Capability
+
+	(description "Ability to identify and specify the stakeholders, markets, locations, and industry sectors marked for building brand awareness.")
+	(name "Brand Targeting")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50083] of  Business_Capability
+
+	(contained_business_capabilities
+		[biabok_Class50092]
+		[biabok_Class50093]
+		[biabok_Class50094])
+	(description "Ability to identify, assess, aggregate, articulate, and incorporate various exposures to harm, danger, or loss associated with a brand.")
+	(name "Brank Risk Management")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50084] of  Business_Capability
+
+	(description "Ability to define, control, authorize, grant, restrict, and otherwise control the right to view, use, or modify a brand.")
+	(name "Brand Access Management")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50085] of  Business_Capability
+
+	(description "Ability to associate a brand with other business objects.")
+	(name "Brank Matching")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50086] of  Business_Capability
+
+	(description "Ability to collect, organize, monitor, report on, or otherwise disseminate basic facts, statistics, attributes, and data about a brand.")
+	(name "Brand Information Management")
+	(supports_business_capabilities [biabok_Class10004])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50087] of  Business_Capability
+
+	(description "Ability to declare a brand.")
+	(name "Brand Establishment")
+	(supports_business_capabilities [biabok_Class50077])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50088] of  Business_Capability
+
+	(description "Ability to recognize a brand.")
+	(name "Brand Identification")
+	(supports_business_capabilities [biabok_Class50077])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50089] of  Business_Capability
+
+	(description "Ability to determine acceptable or unacceptable levels of performance for a brand.")
+	(name "Brand Performance Threshold Setting")
+	(supports_business_capabilities [biabok_Class50079])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50090] of  Business_Capability
+
+	(description "Ability to determine if a brand is exceeding or falling short of an acceptable threshold of performance.")
+	(name "Brand Performance Threshold Measurement")
+	(supports_business_capabilities [biabok_Class50079])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50091] of  Business_Capability
+
+	(description "Ability to assess what is causing a brand to underperform.")
+	(name "Brand Performance Constraints Determination")
+	(supports_business_capabilities [biabok_Class50079])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50092] of  Business_Capability
+
+	(description "Ability to identify and define the level of risk associated with a brand.")
+	(name "Brand Risk Level Determination")
+	(supports_business_capabilities [biabok_Class50083])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50093] of  Business_Capability
+
+	(description "Ability to identify and define the level of acceptable risk associated with a brand.")
+	(name "Brand Risk Threshold Determination")
+	(supports_business_capabilities [biabok_Class50083])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50094] of  Business_Capability
+
+	(description "Ability to consider a collective set of risk factors about a brand and represent them from a rationalized perspective.")
+	(name "Brand Risk Aggregation")
+	(supports_business_capabilities [biabok_Class50083])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50095] of  Business_Capability
+
+	(description "Ability to establish and identify a business entity.")
+	(name "Business Entity Definition")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50096] of  Business_Capability
+
+	(description "Ability to define discrete business entity substructures, such as business units, divisions, departments, and the like, and the relationships among those substructures and other business entities.")
+	(name "Business Entity Structuring")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50097] of  Business_Capability
+
+	(description "Ability to define the legal ownership structure of the enterprise, such as a corporation, a limited partnership, a general partnership, a trust, or a limited liability company.")
+	(name "Business Entity Capital Structure Management")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50098] of  Business_Capability
+
+	(description "Ability to determine how well a business entity is meeting specification and objective levels, or delivering against plan.")
+	(name "Business Entity Performance Management")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50099] of  Business_Capability
+
+	(description "Ability to identify, assess, aggregate, articulate, and incorporate various exposures to harm, danger, or loss associated with a business entity.")
+	(name "Business Entity Risk Management")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50100] of  Business_Capability
+
+	(description "Ability to define, control, authorize, grant, restrict, and otherwise control the right to view, use, or modify a business entity.")
+	(name "Business Entity Access Management")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50101] of  Business_Capability
+
+	(description "Ability to associate a business entity with other business objects.")
+	(name "Business Entity Matching")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50102] of  Business_Capability
+
+	(description "Ability to collect, organize, monitor, report on, or otherwise disseminate basic facts, statistics, attributes, and data about a business entity.")
+	(name "Business Entity Information Management")
+	(supports_business_capabilities [biabok_Class20000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50103] of  Business_Capability
+
+	(description "Ability to establish and identify a campaign.")
+	(name "Campaign Definition")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50104] of  Business_Capability
+
+	(description "Ability to define campaign collateral, including target-specific messaging, graphic designs for each delivery channel, as well as identify the right channel mix and execution sequence.")
+	(name "Campaign Design")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50105] of  Business_Capability
+
+	(description "Ability to capture a campaign target's interests, actions, and answers.")
+	(name "Campaign Response Management")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50106] of  Business_Capability
+
+	(description "Ability to define and optimize the campaign spend versus the value being delivered.")
+	(name "Campaign Cost-Benefit Determination")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50107] of  Business_Capability
+
+	(description "Ability to organize, aggregate, segment, and prioritize a collection of campaigns.")
+	(name "Campaign Portfolio Management")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50108] of  Business_Capability
+
+	(description "Ability to determine how well a campaign is meeting specification and objective levels, or delivering against plan.")
+	(name "Campaign Performance Management")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50109] of  Business_Capability
+
+	(description "Ability to identify, assess, aggregate, articulate, and incorporate various exposures to harm, danger, or loss associated with a campaign.")
+	(name "Campaign Risk Management")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50110] of  Business_Capability
+
+	(description "Ability to define, control, authorize, grant, restrict, and otherwise control the right to view, use, or modify a campaign.")
+	(name "Campaign Access Management")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50111] of  Business_Capability
+
+	(description "Ability to associate a campaign with other business objects.")
+	(name "Campaign Matching")
+	(supports_business_capabilities [biabok_Class20001])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50112] of  Business_Capability
+
+	(description "Ability to collect, organize, monitor, report on, or otherwise disseminate basic facts, statistics, attributes, and data about a campaign.")
+	(name "Campaign Information Management")
+	(supports_business_capabilities [biabok_Class20001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
