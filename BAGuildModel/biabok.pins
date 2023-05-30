@@ -1,4 +1,4 @@
-; Mon May 29 13:51:10 EDT 2023
+; Mon May 29 17:49:21 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -1705,6 +1705,7 @@
 
 ([biabok_Class10004] of  Business_Capability
 
+	(description "Ability to establish, organize, analyze, administer, and report on all aspects of a name, symbol, or design that identifies and differentiates products, offerings, or organizational identities.")
 	(name "Brand Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1811,6 +1812,7 @@
 
 ([biabok_Class20000] of  Business_Capability
 
+	(description "Ability to create, structure, and govern the legal body or bodies that comprises or comprise a single organization.")
 	(name "Business Entity Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1821,6 +1823,7 @@
 
 ([biabok_Class20001] of  Business_Capability
 
+	(description "Ability to identify the need for, plan, design, execute, and measure the effectiveness of an outreach activity that targets a specific population; for example, customers, human resources, partners, and patients, to achieve a certain goal, such as marketing awareness, hiring activities, and health awareness.")
 	(name "Campaign Management")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_quality_status [store_55_Class0])
@@ -1830,6 +1833,7 @@
 
 ([biabok_Class20002] of  Business_Capability
 
+	(description "Ability to organize, plan, direct, and communicate progress against a coordinated collection of temporary endeavors undertaken to create a unique outcome.")
 	(name "Initiative Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1840,6 +1844,7 @@
 
 ([biabok_Class20003] of  Business_Capability
 
+	(description "Ability to define, establish, validate, valuate, register, obtain, and dispose of legal protections such as patents, trademarks, and copyrights.")
 	(name "Intellectual Property Rights Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1850,6 +1855,7 @@
 
 ([biabok_Class20004] of  Business_Capability
 
+	(description "Ability to define, identify, quantify, qualify, analyze, segment, address, and create demand for existing or future products and services.")
 	(name "Market Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1860,6 +1866,7 @@
 
 ([biabok_Class20005] of  Business_Capability
 
+	(description "Ability to define, craft, frame, vet, disseminate, and track a verbal, written, recorded, or digitally-represented communication, including missives, notifications, alerts, and other internally or externally targeted communication about the organization's mission, products, plans, activities, and other focal points.")
 	(name "Message Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1870,6 +1877,7 @@
 
 ([biabok_Class20006] of  Business_Capability
 
+	(description "Ability to define, develop, validate, maintain, and coordinate a set of activities to achieve a result.")
 	(name "Plan Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1880,6 +1888,7 @@
 
 ([biabok_Class20007] of  Business_Capability
 
+	(description "Ability to establish, maintain, comply with, and administer a course or principle of action adopted or proposed by an organization.")
 	(name "Policy Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1890,6 +1899,7 @@
 
 ([biabok_Class20008] of  Business_Capability
 
+	(description "Ability to conduct systematic investigation into materials and sources in order to establish facts and reach conclusions that comprise a result.")
 	(name "Research Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1900,6 +1910,7 @@
 
 ([biabok_Class20009] of  Business_Capability
 
+	(description "Ability to define and disseminate an integrated pattern and perspective that aligns an organization’s goals, objectives, and action sequences into a cohesive whole.")
 	(name "Strategy Management")
 	(supports_business_capabilities [biabok_Class10001])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1941,6 +1952,7 @@
 		[biabok_Class20051]
 		[biabok_Class20052]
 		[biabok_Class20053])
+	(description "Ability to establish, analyze, and utilize a digital, analog, or physical conduit through which products, related services, or communications are delivered or received, including the Internet, phone, delivery service, satellite, radio, or physical means.")
 	(name "Channel Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1951,6 +1963,7 @@
 
 ([biabok_Class20012] of  Business_Capability
 
+	(description "Ability to control, predict, process, organize, present, and analyze all information, documents, preferences, experiences, and history related to a legal entity that has, plans to have, or has had an agreement with the organization, or is a recipient or beneficiary of the organization's products or services.")
 	(name "Customer Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1961,6 +1974,7 @@
 
 ([biabok_Class20013] of  Business_Capability
 
+	(description "Ability to identify, engage, control, predict, organize, and collaborate with a legal entity that has, plans to have, or has had a legally binding agreement with the organization with the intent to exchange value in the provisioning of assets, services, products, or other means of assistance in the course of doing business.")
 	(name "Partner Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1971,6 +1985,7 @@
 
 ([biabok_Class20014] of  Business_Capability
 
+	(description "Ability to conceptualize, design, develop, bundle, source, maintain, and retire a named combination of goods and services that can be offered to customers, in whole or in part.")
 	(name "Product Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1981,6 +1996,7 @@
 
 ([biabok_Class20015] of  Business_Capability
 
+	(description "Ability to administer, valuate, and report on a tradable security, such as stocks, bonds, bills of exchange, futures, options, evidence of ownership, and cash.")
 	(name "Financial Instrument Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -1991,6 +2007,7 @@
 
 ([biabok_Class20016] of  Business_Capability
 
+	(description "Ability to define, place, settle, match, split, valuate, and cancel a request by one party to another to buy, sell, or exchange financial instruments or other goods or services.")
 	(name "Order Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2001,6 +2018,7 @@
 
 ([biabok_Class20017] of  Business_Capability
 
+	(description "Ability to control, organize, and allocate a set of resources expected to increase in value or provide income, in order to achieve a targeted balance of risk, return, and volatility.")
 	(name "Investment Portfolio Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2011,6 +2029,7 @@
 
 ([biabok_Class20018] of  Business_Capability
 
+	(description "Ability to establish, organize, analyze, administer, and report on all aspects of property or other asset that a customer offers as security to a borrowing or lending agreement.")
 	(name "Collateral Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2021,6 +2040,17 @@
 
 ([biabok_Class20019] of  Business_Capability
 
+	(contained_business_capabilities
+		[biabok_Class50060]
+		[biabok_Class50069]
+		[biabok_Class50070]
+		[biabok_Class50071]
+		[biabok_Class50072]
+		[biabok_Class50073]
+		[biabok_Class50074]
+		[biabok_Class50075]
+		[biabok_Class50076])
+	(description "Ability to plan, direct, monitor, organize, control, and report on the monetary aspects and resources that the organization is responsible for.")
 	(name "Finance Management")
 	(supports_business_capabilities [biabok_Class10002])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2031,6 +2061,7 @@
 
 ([biabok_Class20020] of  Business_Capability
 
+	(description "Ability to create, track, report on, and dispose of tangible or intangible property.")
 	(name "Asset Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2041,6 +2072,7 @@
 
 ([biabok_Class20021] of  Business_Capability
 
+	(description "Ability to define, design, profile, rate, and validate the skills and knowledge necessary to do something.")
 	(name "Competency Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2051,6 +2083,7 @@
 
 ([biabok_Class20022] of  Business_Capability
 
+	(description "Ability to establish, use, sustain, disseminate, and analyze a gathering of two or more persons at a determinable time and place, including physical and virtual engagements, conferences, or related gatherings.")
 	(name "Meeting Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2061,6 +2094,7 @@
 
 ([biabok_Class20023] of  Business_Capability
 
+	(description "Ability to define, describe, maintain, and administer a physical structure.")
 	(name "Facility Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2071,6 +2105,7 @@
 
 ([biabok_Class20024] of  Business_Capability
 
+	(description "Ability to assess, mentor, compensate, terminate, and otherwise coordinate individuals who have, plan to have, or have had a legal agreement with the organization, which includes compensation and other benefits on a temporary or permanent basis.")
 	(name "Human Resource Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2081,6 +2116,7 @@
 
 ([biabok_Class20025] of  Business_Capability
 
+	(description "Ability to define, assign, resolve, and track an occurrence that is unpleasant, unusual, unexpected, untoward, or unintended.")
 	(name "Incident Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2091,6 +2127,7 @@
 
 ([biabok_Class20026] of  Business_Capability
 
+	(description "Ability to define, organize, structure, secure, protect, and disseminate facts, statistics, attributes, and other types of data about an organization’s set of business objects.")
 	(name "Information Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2101,6 +2138,7 @@
 
 ([biabok_Class20027] of  Business_Capability
 
+	(description "Ability to manage a question, request, feedback, or comment that may exist inside or outside of the organization which can be received, identified, harvested, disseminated, classified, and tracked.")
 	(name "Inquiry Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2111,6 +2149,7 @@
 
 ([biabok_Class20028] of  Business_Capability
 
+	(description "Ability to identify, define, assign, and manage a named category of accountabilities, whether remunerative or non-remunerative, associated with an assigned, specific, and accountable organization duty, role, or function that can be executed by a human or non-human resource.")
 	(name "Job Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2121,6 +2160,7 @@
 
 ([biabok_Class20029] of  Business_Capability
 
+	(description "Ability to define, express, recognize, interpret, and translate a method of communication or dialect variant consisting of units of representation or meaning, such as numbers, words, symbols, sounds, or other physical manifestations and gestures, presented in a structured way.")
 	(name "Language Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2131,6 +2171,7 @@
 
 ([biabok_Class20030] of  Business_Capability
 
+	(description "Ability to direct, administer, oversee, respond to, and generally administer all aspects of work related to an activity invoking the power of a tribunal to enforce a law.")
 	(name "Legal Proceeding Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2141,6 +2182,7 @@
 
 ([biabok_Class20031] of  Business_Capability
 
+	(description "Ability to define, calculate, articulate, determine, disseminate, or otherwise track a position or site.")
 	(name "Location Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2151,6 +2193,7 @@
 
 ([biabok_Class20032] of  Business_Capability
 
+	(description "Ability to plan, develop, create, capture, modify, evaluate, catalog, archive, and publish a creative work, such as is manifested in audio/visual, still image, textual, experiential, mixed-media, or other forms.")
 	(name "Content Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2161,6 +2204,7 @@
 
 ([biabok_Class20033] of  Business_Capability
 
+	(description "Ability to define, conceptualize, create, and convey structured theoretical or practical subject matter in a consumable format, associated with a curriculum, workshop, or seminar.")
 	(name "Training Course Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2171,6 +2215,7 @@
 
 ([biabok_Class20034] of  Business_Capability
 
+	(description "Ability to capture, organize, prioritize, route, interpret, disseminate, assign, and administer tasks, inbound requests, schedules, events, and related decisions.")
 	(name "Work Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2181,6 +2226,7 @@
 
 ([biabok_Class20035] of  Business_Capability
 
+	(description "Ability to define, establish, articulate, and monitor a point or duration, in the past, present, or future.")
 	(name "Time Management")
 	(supports_business_capabilities [biabok_Class10003])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2541,7 +2587,12 @@
 		[biabok_Class40023]
 		[biabok_Class40021]
 		[biabok_Class40025]
-		[biabok_Class40027])
+		[biabok_Class40027]
+		[biabok_Class50054]
+		[biabok_Class50056]
+		[biabok_Class50063]
+		[biabok_Class50061]
+		[biabok_Class50058])
 	(name "Customer")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2567,7 +2618,13 @@
 
 ([biabok_Class20070] of  Information_Concept
 
-	(inverse_of_valuestage_to_infoconcept [biabok_Class10])
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class10]
+		[biabok_Class50054]
+		[biabok_Class50056]
+		[biabok_Class50063]
+		[biabok_Class50061]
+		[biabok_Class50058])
 	(name "Message")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2581,7 +2638,12 @@
 	(inverse_of_valuestage_to_infoconcept
 		[biabok_Class8]
 		[biabok_Class40025]
-		[biabok_Class40027])
+		[biabok_Class40027]
+		[biabok_Class50056]
+		[biabok_Class50065]
+		[biabok_Class50063]
+		[biabok_Class50061]
+		[biabok_Class50058])
 	(name "Financial Account")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -2600,7 +2662,9 @@
 		[biabok_Class8]
 		[biabok_Class10]
 		[biabok_Class12]
-		[biabok_Class40025])
+		[biabok_Class40025]
+		[biabok_Class50056]
+		[biabok_Class50058])
 	(name "Agreement")
 	(related_from_information_concepts [biabok_Class20072])
 	(related_information_concepts
@@ -2654,7 +2718,8 @@
 		[biabok_Class6]
 		[biabok_Class8]
 		[biabok_Class10]
-		[biabok_Class40021])
+		[biabok_Class40021]
+		[biabok_Class50054])
 	(name "Partner")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -3363,6 +3428,13 @@
 	(system_is_published TRUE)
 	(vsg_index 1)
 	(vsg_label [biabok_Class40008])
+	(vsg_participants
+		[biabok_Class30005]
+		[biabok_Class30024]
+		[biabok_Class40033]
+		[biabok_Class40042]
+		[biabok_Class40046]
+		[biabok_Class40064])
 	(vsg_value_stream [biabok_Class40006]))
 
 ([biabok_Class40008] of  Label
@@ -3385,6 +3457,13 @@
 	(system_is_published TRUE)
 	(vsg_index 2)
 	(vsg_label [biabok_Class40010])
+	(vsg_participants
+		[biabok_Class40031]
+		[biabok_Class40032]
+		[biabok_Class40033]
+		[biabok_Class40042]
+		[biabok_Class40046]
+		[biabok_Class40079])
 	(vsg_value_stream [biabok_Class40006]))
 
 ([biabok_Class40010] of  Label
@@ -3407,6 +3486,17 @@
 	(system_is_published TRUE)
 	(vsg_index 3)
 	(vsg_label [biabok_Class40012])
+	(vsg_participants
+		[biabok_Class30005]
+		[biabok_Class30024]
+		[biabok_Class30036]
+		[biabok_Class40032]
+		[biabok_Class40033]
+		[biabok_Class40042]
+		[biabok_Class40046]
+		[biabok_Class40064]
+		[biabok_Class40079]
+		[biabok_Class40093])
 	(vsg_value_stream [biabok_Class40006]))
 
 ([biabok_Class40012] of  Label
@@ -3429,6 +3519,12 @@
 	(system_is_published TRUE)
 	(vsg_index 4)
 	(vsg_label [biabok_Class40014])
+	(vsg_participants
+		[biabok_Class40033]
+		[biabok_Class40059]
+		[biabok_Class40070]
+		[biabok_Class40071]
+		[biabok_Class40093])
 	(vsg_value_stream [biabok_Class40006]))
 
 ([biabok_Class40014] of  Label
@@ -3451,6 +3547,10 @@
 	(system_is_published TRUE)
 	(vsg_index 5)
 	(vsg_label [biabok_Class40016])
+	(vsg_participants
+		[biabok_Class30042]
+		[biabok_Class40059]
+		[biabok_Class40071])
 	(vsg_value_stream [biabok_Class40006]))
 
 ([biabok_Class40016] of  Label
@@ -4672,6 +4772,9 @@
 
 ([biabok_Class50002] of  Information_Concept
 
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class50061]
+		[biabok_Class50058])
 	(name "Payment")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -4682,6 +4785,10 @@
 
 ([biabok_Class50003] of  Information_Concept
 
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class50056]
+		[biabok_Class50065]
+		[biabok_Class50058])
 	(name "Policy")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -4692,6 +4799,12 @@
 
 ([biabok_Class50004] of  Information_Concept
 
+	(inverse_of_valuestage_to_infoconcept
+		[biabok_Class50056]
+		[biabok_Class50065]
+		[biabok_Class50063]
+		[biabok_Class50061]
+		[biabok_Class50058])
 	(name "Financial Transaction")
 	(related_from_information_concepts [biabok_Class20072])
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -5301,6 +5414,368 @@
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE)
 	(vs_trigger_business_roles [biabok_Class40043]))
+
+([biabok_Class50053] of  Value_Stream
+
+	(description "the process of reloading monetary amount (or value) onto a prepaid debit card.")
+	(name "Reload Prepaid Card (RPC)")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(vs_value_stages
+		[biabok_Class50054]
+		[biabok_Class50056]
+		[biabok_Class50058]
+		[biabok_Class50061]
+		[biabok_Class50063]
+		[biabok_Class50065]))
+
+([biabok_Class50054] of  Value_Stage
+
+	(description "The act of requesting financial activity on an agreement.\nCustomer submits request to reload prepaid debit card with financial transaction broker and/or on an appropriate card reloading channel (e.g. application, service, etc.).")
+	(name "Reload Prepaid Card (RPC): 1. RPC - Initiate Transaction")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20068]
+		[biabok_Class20070]
+		[biabok_Class20074])
+	(vsg_index 1)
+	(vsg_label [biabok_Class50055])
+	(vsg_participants
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class30000]
+		[biabok_Class40060])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20005]
+		[biabok_Class20013])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50055] of  Label
+
+	(name "RPC - Initiate Transaction")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50056] of  Value_Stage
+
+	(description "The act of ensuring that the requester has authority to request the transaction and the agreement is in a valid state to allow the transaction to occur.\nFinancial transaction broker and/or card reloading channel validates Customer information (may include identification), status of an Active account and policy compliance.")
+	(name "Reload Prepaid Card (RPC): 2. RPC - Validate Transaction Request")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20072]
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class50004]
+		[biabok_Class20070]
+		[biabok_Class50003])
+	(vsg_index 2)
+	(vsg_label [biabok_Class50057])
+	(vsg_participants
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class30000]
+		[biabok_Class40060])
+	(vsg_required_business_capabilities
+		[biabok_Class20010]
+		[biabok_Class20012]
+		[biabok_Class20019]
+		[biabok_Class20005]
+		[biabok_Class20007])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50057] of  Label
+
+	(name "RPC - Validate Transaction Request")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50058] of  Value_Stage
+
+	(description "The act of identifying all related effects of the transaction (e.g. fees and charges).\nFinancial transaction broker and/or card reloading channel confirms applicable fees & charges, and Customer may Accept or Decline them to proceed with reloading the prepaid debit card.")
+	(name "Reload Prepaid Card (RPC): 3. RPC - Identify Related Impacts")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20072]
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class50004]
+		[biabok_Class20070]
+		[biabok_Class50002]
+		[biabok_Class50003]
+		[biabok_Class50067]
+		[biabok_Class50068])
+	(vsg_index 3)
+	(vsg_label [biabok_Class50059])
+	(vsg_participants
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class40038]
+		[biabok_Class40060])
+	(vsg_required_business_capabilities
+		[biabok_Class20010]
+		[biabok_Class20012]
+		[biabok_Class20019]
+		[biabok_Class20007])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50059] of  Label
+
+	(name "RPC - Identify Related Impacts")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50060] of  Business_Capability
+
+	(description "Ability to establish and adjust a prediction of a future financial aspect of the organization, based on but not limited to, history and market trends.")
+	(name "Financial Forecast Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50061] of  Value_Stage
+
+	(description "The act of applying request changes to the agreement balance and calculating the new agreement balance.\nWhen the Customer accepts the applicable fees & charges, the financial transaction broker and/or card reloading channel accepts and applies the Money for fees, charges and reloading onto the prepaid debit card.")
+	(name "Reload Prepaid Card (RPC): 4. RPC - Perform Transaction")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class50004]
+		[biabok_Class20070]
+		[biabok_Class50002])
+	(vsg_index 4)
+	(vsg_label [biabok_Class50062])
+	(vsg_participants
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class30000]
+		[biabok_Class40060])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20019]
+		[biabok_Class20005])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50062] of  Label
+
+	(name "RPC - Perform Transaction")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50063] of  Value_Stage
+
+	(description "The act of notifying all stakeholders of the transaction and related events.\nWhen the Money is applied to the fees, charges and prepaid debit card, the financial transaction broker and/or card reloading channel confirms the Customer of the applied changes.")
+	(name "Reload Prepaid Card (RPC): 5. RPC - Notify Stakeholders")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20068]
+		[biabok_Class20071]
+		[biabok_Class50004]
+		[biabok_Class20070])
+	(vsg_index 5)
+	(vsg_label [biabok_Class50064])
+	(vsg_participants
+		[biabok_Class30013]
+		[biabok_Class30041]
+		[biabok_Class30042]
+		[biabok_Class30000]
+		[biabok_Class40060])
+	(vsg_required_business_capabilities
+		[biabok_Class20012]
+		[biabok_Class20019]
+		[biabok_Class20005])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50064] of  Label
+
+	(name "RPC - Notify Stakeholders")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50065] of  Value_Stage
+
+	(description "The act of ensuring that processed transactions are recorded and retained in accordance with organization and regulatory policy.\nPost to G/L and maintain data retention")
+	(name "Reload Prepaid Card (RPC): 6. RPC - Verify Compliance")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(valuestage_to_infoconcept
+		[biabok_Class20071]
+		[biabok_Class50004]
+		[biabok_Class50003])
+	(vsg_index 6)
+	(vsg_label [biabok_Class50066])
+	(vsg_participants [biabok_Class30000])
+	(vsg_required_business_capabilities
+		[biabok_Class20019]
+		[biabok_Class20026]
+		[biabok_Class20007])
+	(vsg_value_stream [biabok_Class50053]))
+
+([biabok_Class50066] of  Label
+
+	(name "RPC - Verify Compliance")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50067] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class50058])
+	(name "Currency Definition")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50068] of  Information_Concept
+
+	(inverse_of_valuestage_to_infoconcept [biabok_Class50058])
+	(name "Monetary Amount")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50069] of  Business_Capability
+
+	(description "Ability to establish, maintain, balance, audit, secure, and provide access to a named container of monetary amounts that are typically organized into assets, liabilities, income, expense, equity, and other related categories.")
+	(name "Financial Account Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50070] of  Business_Capability
+
+	(description "Ability to establish, determine, identify, and maintain a representation of value as expressed in a currency.")
+	(name "Monetary Amount Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50071] of  Business_Capability
+
+	(description "Ability to assess, define, and monitor financial threat and vulnerabilities related to the financial condition of the organization.")
+	(name "Financial Risk Determination")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50072] of  Business_Capability
+
+	(description "Ability to determine, represent, and value an agreed medium of value exchange.")
+	(name "Currency Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50073] of  Business_Capability
+
+	(description "Ability to determine, calculate, remit, or report on the compulsory contribution of monetary value to governing bodies.")
+	(name "Tax Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50074] of  Business_Capability
+
+	(description "Ability to determine, approve, commit, execute, record, or report on an obligation to remit or receive a monetary amount between an organization and a customer, partner, or other external party.")
+	(name "Payment Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50075] of  Business_Capability
+
+	(description "Ability to authorize, handle, record, and apply an instance of a monetary amount movement or related exchange across organizations, agreements, or financial accounts.")
+	(name "Financial Transaction Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class50076] of  Business_Capability
+
+	(description "Ability to collect, organize, track, report on, or otherwise disseminate basic facts, statistics, attributes, and data about the financials of the organization.")
+	(name "Financial Information Management")
+	(supports_business_capabilities [biabok_Class20019])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
 
 ([biabok_Class6] of  Value_Stage
 
