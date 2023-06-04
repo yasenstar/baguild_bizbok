@@ -1,4 +1,4 @@
-; Mon May 29 23:11:09 EDT 2023
+; Thu Jun 01 22:58:06 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -339,6 +339,9 @@
 
 	(essential_id "sl17"))
 
+([act_to_obj_for_element] of  %3AESSENTIAL-SLOT
+)
+
 ([act_to_obj_objective] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl18"))
@@ -631,6 +634,15 @@
 
 	(essential_id "sl70"))
 
+([API_Lifecycle_Model] of  %3AESSENTIAL-CLASS
+)
+
+([API_Lifecycle_Status] of  %3AESSENTIAL-CLASS
+)
+
+([API_Lifecycle_Status_Usage] of  %3AESSENTIAL-CLASS
+)
+
 ([api_supported_protocols] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl71"))
@@ -802,6 +814,9 @@
 ([APP_PRO_TO_INFOREP_EXCHANGE_RELATION] of  %3AESSENTIAL-CLASS
 
 	(essential_id "cl616"))
+
+([app_pro_to_inforep_exchanges] of  %3AESSENTIAL-SLOT
+)
 
 ([app_pro_to_inforep_from_app] of  %3AESSENTIAL-SLOT
 
@@ -6247,6 +6262,779 @@
 	(vsg_required_business_capabilities [biabok_Class20045])
 	(vsg_value_stream [biabok_Class0]))
 
+([biabok_Class60000] of  Editor
+
+	(description "Create, store and rumn dynamic queries against live repository data")
+	(editor_is_external FALSE)
+	(editor_sections [biabok_Class60002])
+	(external_repository_instance_reference [biabok_Class60001])
+	(name "SYS: DYNAMIC QUERY TOOL")
+	(report_history_label "Dynamic Query Tool")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled TRUE)
+	(report_label "Dynamic Query Tool")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "editors/enterprise/dynamic-query-tool/core_dynamic_query_tool.html")
+	(system_author_id "neil.walsh@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2022-12-14T11:44:33.005Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T11:54:25.689Z"))
+
+([biabok_Class60001] of  External_Instance_Reference
+
+	(name "Viewer Config Import Spreadsheet::ESSREL6_16_3_DQT1")
+	(referenced_instance [biabok_Class60000])
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60002] of  Editor_Section
+
+	(editor_section_anchor_id "main_section")
+	(editor_section_is_default TRUE)
+	(editor_section_label "Main")
+	(editor_section_parent [biabok_Class60000])
+	(name "SYS: DYNAMIC QUERY TOOL: Main")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60003] of  Editor_Component
+
+	(description "Sections that support the capture of performance measures of an instance")
+	(editor_component_configurator [biabok_Class60004])
+	(editor_component_display_label "Performance Measure Sections")
+	(editor_component_execution_html_path "editors/configurable/performance-measure-sections/performance-measure-sections.html")
+	(editor_component_execution_logic_path "./editors/configurable/performance-measure-sections/PerformanceMeasureSections.js")
+	(editor_component_execution_module_name "PerformanceMeasureSections")
+	(editor_component_for_specific_slots [performance_measures])
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components FALSE)
+	(editor_component_type [store_55_Class35])
+	(name "Performance Measure Sections Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2022-12-14T14:54:25.247Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T11:45:44.514Z"))
+
+([biabok_Class60004] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60003])
+	(editor_component_config_settings_path "editors/configurable/performance-measure-sections/config/performance-measure-sections-config-settings.json")
+	(editor_component_display_label "Performance Measure Sections Configurator")
+	(editor_component_execution_html_path "editors/configurable/performance-measure-sections/config/performance-measure-sections-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/performance-measure-sections/config/PerformanceMeasureSectionsConfig.js")
+	(editor_component_execution_module_name "PerformanceMeasureSectionsConfig")
+	(name "Performance Measure Sections Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2022-12-14T14:54:25.257Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T11:45:44.573Z"))
+
+([biabok_Class60005] of  Applied_Updates
+
+	(description "Adds meta-model updates and instance changes for Essential Meta-Model 6.16.2.")
+	(meta_model_update_applied_date "1-Jun-2023 1:18:14 PM")
+	(name "Essential Viewer 6.16.2 Update Pack")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60006] of  Editor
+
+	(description "Content Governance Manager Dashboard")
+	(editor_is_external FALSE)
+	(editor_sections [biabok_Class60007])
+	(name "SYS: Content Governance Manager Dashboard")
+	(report_history_label "Content Manager Dashboard")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled FALSE)
+	(report_label "Content Manager Dashboard")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "editors/enterprise/content-governance-dashboard/content-governance-dashboard-manager.html")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-04-04T08:38:23.117Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-04T08:38:23.170Z"))
+
+([biabok_Class60007] of  Editor_Section
+
+	(editor_section_anchor_id "main_section")
+	(editor_section_is_default TRUE)
+	(editor_section_label "Main")
+	(editor_section_parent [biabok_Class60006])
+	(name "SYS: Content Governance Manager Dashboard: Main")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60008] of  Editor
+
+	(description "Content Governance Reviewer Dashboard")
+	(editor_is_external FALSE)
+	(editor_sections [biabok_Class60009])
+	(name "SYS: Content Governance Reviewer Dashboard")
+	(report_history_label "Content Reviewer Dashboard")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled FALSE)
+	(report_label "Content Reviewer Dashboard")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "editors/enterprise/content-governance-dashboard/content-governance-dashboard-reviewer.html")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-04-04T08:38:23.138Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-04T08:38:23.186Z"))
+
+([biabok_Class60009] of  Editor_Section
+
+	(editor_section_anchor_id "main_section")
+	(editor_section_is_default TRUE)
+	(editor_section_label "Main")
+	(editor_section_parent [biabok_Class60008])
+	(name "SYS: Content Governance Reviewer Dashboard: Main")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60010] of  Editor
+
+	(description "Create, update and delete Content Governance Policies")
+	(editor_is_external FALSE)
+	(editor_sections [biabok_Class60011])
+	(name "SYS: Content Governance Policy Editor")
+	(report_history_label "Content Governance Policy Editor")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled FALSE)
+	(report_label "Content Governance Policy Editor")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_screenshot_filename "editors/assets/images/screenshots/content-gov-policy-editor.png")
+	(report_xsl_filename "editors/enterprise/content-gov-policy-editor/core_content_gov_policy_editor.html")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-04-05T09:39:51.814Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-05T09:41:06.229Z"))
+
+([biabok_Class60011] of  Editor_Section
+
+	(editor_section_anchor_id "main_section")
+	(editor_section_is_default TRUE)
+	(editor_section_label "Main")
+	(editor_section_parent [biabok_Class60010])
+	(name "SYS: Content Governance Policy Editor: Main")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
+([biabok_Class60012] of  Report
+
+	(description "Powerpoint generation of several views")
+	(element_classified_by [viewer3_dev_14032012_Class0])
+	(name "Core: PowerPoint Manager")
+	(report_history_label "PowerPoint Manager")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled TRUE)
+	(report_label "PowerPoint Manager")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_screenshot_filename "images/screenshots/powerpoint-manager.png")
+	(report_xsl_filename "integration/core_el_powerpoint_central.xsl")
+	(system_author_id "support1@enterprise-architecture.org")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-01-23T09:59:47.925Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T11:45:15.646Z"))
+
+([biabok_Class60013] of  Report
+
+	(description "Provides a breakdown of strategic drivers goals and objectives with associated plans")
+	(element_classified_by [essential_baseline_v2.0_Class80008])
+	(name "Core: Business Strategy Overview")
+	(report_history_label "Business Strategy Overview")
+	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
+	(report_is_enabled TRUE)
+	(report_label "Business Strategy Overview")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_screenshot_filename "images/screenshots/bus-strat-view.png")
+	(report_xsl_filename "enterprise/core_el_strategy_viewer.xsl")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-01T12:10:19.826Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-24T11:07:05.587Z"))
+
+([biabok_Class60014] of  Data_Set_API
+
+	(description "KPIs related to items in the support layer")
+	(dsa_data_label "support-kpi-data")
+	(is_data_set_api_precached TRUE)
+	(name "Core: Support KPIs")
+	(report_implementation_type [essential_baseline_v6_10_4_Class10000])
+	(report_is_enabled TRUE)
+	(report_label "suppKPIAPI")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "enterprise/api/core_api_el_support_perf_measures.xsl")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-01T12:10:19.978Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-01T12:10:19.990Z"))
+
+([biabok_Class60015] of  Data_Set_API
+
+	(description "Data related to plans and projects")
+	(dsa_data_label "planning-data")
+	(is_data_set_api_precached TRUE)
+	(name "Core API: Import Planning Data")
+	(report_implementation_type [essential_baseline_v6_10_4_Class10000])
+	(report_is_enabled TRUE)
+	(report_label "planDataAPI")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "enterprise/api/core_api_el_plans_prog_proj.xsl")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-01T12:10:20.010Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-01T12:10:20.019Z"))
+
+([biabok_Class60016] of  Data_Set_API
+
+	(description "SYSTEM API used by the roadmap enablement feature containing all valid PLAN TO ELEMENT RELATION instances")
+	(dsa_data_label "plans")
+	(is_data_set_api_precached TRUE)
+	(name "System: Roadmap Planned Changes API")
+	(report_implementation_type [essential_baseline_v6_10_4_Class10000])
+	(report_is_enabled TRUE)
+	(report_label "System: Roadmap Planned Changes API")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "common/user-settings/api/core_api_el_rm_enablement_all_changes.xsl")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-10T10:16:53.540Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-10T10:16:53.580Z"))
+
+([biabok_Class60017] of  Data_Set_API
+
+	(description "SYSTEM API used by the roadmap enablement feature containing all instances of Roadmap, Strategic Plan and Change Activites that have been defined")
+	(dsa_data_label "roadmaps")
+	(is_data_set_api_precached TRUE)
+	(name "System: Roadmaps, Plans and Projects API")
+	(report_implementation_type [essential_baseline_v6_10_4_Class10000])
+	(report_is_enabled TRUE)
+	(report_label "System: Roadmaps, Plans and Projects API")
+	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
+	(report_xsl_filename "common/user-settings/api/core_api_el_rm_enablement_roadmaps_plans_change_acts.xsl")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-10T10:16:53.605Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-10T10:16:53.622Z"))
+
+([biabok_Class60018] of  Viewer_Code_Library
+
+	(description "Include statements for the ParamQuery Grid Pro library, providing a means to bulk edit data in a tabular format")
+	(name "ParamQuery Grid Tabular Editor Library")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.796Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:40:53.350Z")
+	(vcl_included_html_path "editors/assets/js/paramquery-8/paramquery_v8_links.html")
+	(vcl_library_type [store_55_Class37]))
+
+([biabok_Class60019] of  Viewer_Code_Library
+
+	(description "Provides a graphical component for capturing numbers")
+	(name "Bootstrap Number Slider Library")
+	(system_author_id "support@enterprise-architecture.org")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2020-11-18T11:04:25.880Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-04T23:52:24.853Z")
+	(vcl_included_html_path "js/bootstrap-slider/bootstrap_slider_links.html")
+	(vcl_library_type [store_55_Class37]))
+
+([biabok_Class60020] of  Viewer_Code_Library
+
+	(description "Javascript library for saving and opening files from a browser using the native operating system")
+	(name "Filesaver JS Library")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-04-14T10:51:59.796Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-14T10:53:03.767Z")
+	(vcl_included_html_path "js/FileSaver/filesaver_links.html")
+	(vcl_library_type [store_55_Class37]))
+
+([biabok_Class60021] of  Editor_Component
+
+	(description "A Panel component that suports the mapping of Strategic Plans and their Planned Changes to Change Activities, i.e. Projects etc.")
+	(editor_component_configurator [biabok_Class60022])
+	(editor_component_display_label "Change Activity Strategic Plans Panel")
+	(editor_component_execution_html_path "editors/configurable/ca-strategic-plans-panel/ca-strategic-plans-panel.html")
+	(editor_component_execution_logic_path "./editors/configurable/ca-strategic-plans-panel/ChangeActivityStrategicPlansPanel.js")
+	(editor_component_execution_module_name "ChangeActivityStrategicPlansPanel")
+	(editor_component_for_specific_slots [ca_strategic_plans_supported])
+	(editor_component_required_classes
+		[Enterprise_Strategic_Plan]
+		[Business_Strategic_Plan]
+		[Application_Strategic_Plan]
+		[Information_Strategic_Plan]
+		[Technology_Strategic_Plan])
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components TRUE)
+	(editor_component_type [store_55_Class33])
+	(name "Change Activity Strategic Plans Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.347Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-24T11:11:58.649Z")
+	(viewer_code_libraries [store_55_Class50]))
+
+([biabok_Class60022] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60021])
+	(editor_component_config_settings_path "editors/configurable/ca-strategic-plans-panel/config/ca-strategic-plans-panel-config-settings.json")
+	(editor_component_display_label "Change Activity Strategic Plans Panel Configurator")
+	(editor_component_execution_html_path "editors/configurable/ca-strategic-plans-panel/config/ca-strategic-plans-panel-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/ca-strategic-plans-panel/config/ChangeActivityStrategicPlansPanelConfig.js")
+	(editor_component_execution_module_name "ChangeActivityStrategicPlansPanelConfig")
+	(name "Change Activity Strategic Plans Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.558Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.571Z"))
+
+([biabok_Class60023] of  Editor_Component
+
+	(description "Creates one or more tabs, each of which allows a user to capture the Impacts that an Idea Option has on elements with a given Reference Model, e.g. Business Capability Model, Technology Reference Model")
+	(editor_component_configurator [biabok_Class60024])
+	(editor_component_display_label "Idea Reference Model Impact Tabs")
+	(editor_component_execution_html_path "editors/configurable/idea-ref-model-impact-tabs/idea-ref-model-impact-tabs.html")
+	(editor_component_execution_logic_path "./editors/configurable/idea-ref-model-impact-tabs/IdeaReferenceModelImpactTabs.js")
+	(editor_component_execution_module_name "IdeaReferenceModelImpactTabs")
+	(editor_component_for_specific_slots [idea_proposed_changes])
+	(editor_component_required_classes
+		[Business_Capability]
+		[Business_Process]
+		[Application_Capability]
+		[Application_Service]
+		[Composite_Application_Provider]
+		[Technology_Capability]
+		[Technology_Component]
+		[Information_Concept]
+		[Information_View]
+		[Data_Subject]
+		[Data_Object])
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components TRUE)
+	(editor_component_type [store_55_Class32])
+	(name "Idea Reference Model Impact Tabs Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.386Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-24T11:18:51.684Z"))
+
+([biabok_Class60024] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60023])
+	(editor_component_config_settings_path "editors/configurable/idea-ref-model-impact-tabs/config/idea-ref-model-impact-tabs-config-settings.json")
+	(editor_component_display_label "Idea Reference Model Impact Tabs Configurator")
+	(editor_component_execution_html_path "editors/configurable/idea-ref-model-impact-tabs/config/idea-ref-model-impact-tabs-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/idea-ref-model-impact-tabs/config/IdeaReferenceModelImpactTabsConfig.js")
+	(editor_component_execution_module_name "IdeaReferenceModelImpactTabsConfig")
+	(name "Idea Reference Model Impact Tabs Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.589Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.600Z"))
+
+([biabok_Class60025] of  Editor_Component
+
+	(description "Supports creation and editing of one or more simple (i.e. non-relationship) instances that are not shared with any other instances")
+	(editor_component_configurator [biabok_Class60026])
+	(editor_component_display_label "Multi-Contained Instance Panel")
+	(editor_component_execution_html_path "editors/configurable/multi-contained-instances-panel/multi-contained-instances-panel.html")
+	(editor_component_execution_logic_path "./editors/configurable/multi-contained-instances-panel/MultiContainedInstancesPanel.js")
+	(editor_component_execution_module_name "MultiContainedInstancesPanel")
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components TRUE)
+	(editor_component_type [store_55_Class33])
+	(name "Multi-Contained Instance Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.406Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.617Z"))
+
+([biabok_Class60026] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60025])
+	(editor_component_config_settings_path "editors/configurable/multi-contained-instances-panel/config/multi-contained-instances-panel-config-settings.json")
+	(editor_component_display_label "Multi-Contained Instance Panel Configurator")
+	(editor_component_execution_html_path "editors/configurable/multi-contained-instances-panel/config/multi-contained-instances-panel-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/multi-contained-instances-panel/config/MultiContainedInstancesPanelConfig.js")
+	(editor_component_execution_module_name "MultiContainedInstancesPanelConfig")
+	(name "Multi-Contained Instance Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.612Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.624Z"))
+
+([biabok_Class60027] of  Editor_Component
+
+	(description "Supports editing of a multiple cardinality string property, with each entry being one or more longer sentences")
+	(editor_component_configurator [biabok_Class60028])
+	(editor_component_display_label "Multiple Multi-Line Texts Panel")
+	(editor_component_execution_html_path "editors/configurable/multiple-multi-line-text/multiple-multi-line-text.html")
+	(editor_component_execution_logic_path "./editors/configurable/multiple-multi-line-text/MultipleMultiLineTextPanel.js")
+	(editor_component_execution_module_name "MultipleMultiLineTextPanel")
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class24])
+	(editor_component_supports_sub_components FALSE)
+	(editor_component_type [store_55_Class33])
+	(name "Multiple Multi-Line Texts Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.423Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.642Z"))
+
+([biabok_Class60028] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60027])
+	(editor_component_config_settings_path "editors/configurable/multiple-multi-line-text/config/multiple-multi-line-text-config-settings.json")
+	(editor_component_display_label "Multiple Multi-Line Texts Panel Configurator")
+	(editor_component_execution_html_path "editors/configurable/multiple-multi-line-text/config/multiple-multi-line-text-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/multiple-multi-line-text/config/MultipleMultiLineTextPanelConfig.js")
+	(editor_component_execution_module_name "MultipleMultiLineTextPanelConfig")
+	(name "Multiple Multi-Line Texts Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.637Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.649Z"))
+
+([biabok_Class60029] of  Editor_Component
+
+	(description "Supports editing of a single cardinality integer property using a graphical slider")
+	(editor_component_configurator [biabok_Class60030])
+	(editor_component_display_label "Integer Slider Input")
+	(editor_component_execution_html_path "editors/configurable/integer-slider-input/integer-slider-input.html")
+	(editor_component_execution_logic_path "./editors/configurable/integer-slider-input/IntegerSliderInput.js")
+	(editor_component_execution_module_name "IntegerSliderInput")
+	(editor_component_supported_cardinality [store_55_Class30])
+	(editor_component_supported_slot_type [store_55_Class26])
+	(editor_component_supports_sub_components FALSE)
+	(editor_component_type [store_55_Class34])
+	(name "Integer Slider Input Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.440Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.666Z"))
+
+([biabok_Class60030] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60029])
+	(editor_component_config_settings_path "editors/configurable/integer-slider-input/config/integer-slider-input-config-settings.json")
+	(editor_component_display_label "Integer Slider Input Configurator")
+	(editor_component_execution_html_path "editors/configurable/integer-slider-input/config/integer-slider-input-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/integer-slider-input/config/IntegerSliderInputConfig.js")
+	(editor_component_execution_module_name "IntegerSliderInputConfig")
+	(name "Integer Slider Input Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.662Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.674Z"))
+
+([biabok_Class60031] of  Editor_Component
+
+	(description "Provides spreadsheet-style features for creating, copying, updating or deleting instances that are directly related to the instance being edited and NOT shared with any other instances.")
+	(editor_component_configurator [biabok_Class60032])
+	(editor_component_display_label "Matrix Editor Panel")
+	(editor_component_execution_html_path "editors/configurable/matrix-editor-panel/matrix-editor-panel.html")
+	(editor_component_execution_logic_path "./editors/configurable/matrix-editor-panel/MatrixEditorPanel.js")
+	(editor_component_execution_module_name "MatrixEditorPanel")
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components FALSE)
+	(editor_component_type [store_55_Class33])
+	(name "Matrix Editor Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.458Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-21T12:27:47.460Z")
+	(viewer_code_libraries
+		[biabok_Class60018]
+		[store_55_Class40]
+		[biabok_Class60020]))
+
+([biabok_Class60032] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60031])
+	(editor_component_config_settings_path "editors/configurable/matrix-editor-panel/config/matrix-editor-panel-config-settings.json")
+	(editor_component_display_label "Matrix Editor Panel Configurator")
+	(editor_component_execution_html_path "editors/configurable/matrix-editor-panel/config/matrix-editor-panel-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/matrix-editor-panel/config/MatrixEditorPanelConfig.js")
+	(editor_component_execution_module_name "MatrixEditorPanelConfig")
+	(name "Matrix Editor Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.687Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.699Z"))
+
+([biabok_Class60033] of  Editor_Component
+
+	(description "Supports graphical editing of the Value Stage hierarchy of a Value Stream")
+	(editor_component_configurator [biabok_Class60034])
+	(editor_component_display_label "Value Stream Stages Panel")
+	(editor_component_execution_html_path "editors/configurable/value-stream-stages-panel/value-stream-stages-panel.html")
+	(editor_component_execution_logic_path "./editors/configurable/value-stream-stages-panel/ValueStreamStagesPanel.js")
+	(editor_component_execution_module_name "ValueStreamStagesPanel")
+	(editor_component_for_specific_slots [vs_value_stages])
+	(editor_component_required_classes [Value_Stage])
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components TRUE)
+	(editor_component_type [store_55_Class33])
+	(name "Value Stream Stages Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.509Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-04-24T11:14:25.886Z"))
+
+([biabok_Class60034] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60033])
+	(editor_component_config_settings_path "editors/configurable/value-stream-stages-panel/config/value-stream-stages-panel-config-settings.json")
+	(editor_component_display_label "Value Stream Stages Panel Configurator")
+	(editor_component_execution_html_path "editors/configurable/value-stream-stages-panel/config/value-stream-stages-panel-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/value-stream-stages-panel/config/ValueStreamStagesPanelConfig.js")
+	(editor_component_execution_module_name "ValueStreamStagesPanelConfig")
+	(name "Value Stream Stages Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.740Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.751Z"))
+
+([biabok_Class60035] of  Editor_Component
+
+	(description "Supports the selection and editing of one or more relationship instances as well as the instance at the other end of the relationship")
+	(editor_component_configurator [biabok_Class60036])
+	(editor_component_display_label "Multiple Relations Editing Panel")
+	(editor_component_execution_html_path "editors/configurable/multi-relation-select-panel/multi-relation-select-panel.html")
+	(editor_component_execution_logic_path "./editors/configurable/multi-relation-select-panel/MultiRelationSelectPanel.js")
+	(editor_component_execution_module_name "MultiRelationSelectPanel")
+	(editor_component_supported_cardinality [store_55_Class31])
+	(editor_component_supported_slot_type [store_55_Class23])
+	(editor_component_supports_sub_components TRUE)
+	(editor_component_type [store_55_Class33])
+	(name "Multiple Relations Editing Panel Editor Component")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.531Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.804Z")
+	(viewer_code_libraries [store_55_Class50]))
+
+([biabok_Class60036] of  Editor_Component_Configurator
+
+	(editor_component_config_for_component [biabok_Class60035])
+	(editor_component_config_settings_path "editors/configurable/multi-relation-select-panel/config/multi-relation-select-panel-config-settings.json")
+	(editor_component_display_label "Multiple Relations Editing Panel Component Configurator")
+	(editor_component_execution_html_path "editors/configurable/multi-relation-select-panel/config/multi-relation-select-panel-config.html")
+	(editor_component_execution_logic_path "./editors/configurable/multi-relation-select-panel/config/MultiRelationSelectPanelConfig.js")
+	(editor_component_execution_module_name "MultiRelationSelectPanelConfig")
+	(name "Multiple Relations Editing Panel Editor Component Configurator")
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-23T17:33:25.764Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:33:25.776Z"))
+
+([biabok_Class60037] of  Individual_Business_Role
+
+	(description "A system role for individuals reponsible for maintaining content governance policies for meta-classes")
+	(external_to_enterprise FALSE)
+	(name "SYS_CONTENT_QUALITY_REVIEW_POLICY_OWNER")
+	(role_is_external FALSE)
+	(system_author_id "jason.powell@e-asolutions.com")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_creation_datetime_iso8601 "2023-03-30T12:04:18.408Z")
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE)
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T12:05:04.790Z"))
+
+([biabok_Class60038] of  Applied_Updates
+
+	(description "Adds meta-model updates and instance changes for Essential Meta-Model 6.18.")
+	(meta_model_update_applied_date "1-Jun-2023 1:21:31 PM")
+	(name "Essential Viewer 6.18 Update Pack")
+	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
+	(system_content_quality_status [store_55_Class0])
+	(system_content_visibility [essential_baseline_6.5.4_Class68])
+	(system_ea_reference_instance_counter 0)
+	(system_is_published TRUE))
+
 ([biabok_Class7] of  Label
 
 	(name "EFA - Collect Approval and Submission")
@@ -7177,6 +7965,15 @@
 ([business_tasks_used] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl284"))
+
+([Business_Term] of  %3AESSENTIAL-CLASS
+)
+
+([business_term_examples] of  %3AESSENTIAL-SLOT
+)
+
+([business_term_related_terms] of  %3AESSENTIAL-SLOT
+)
 
 ([BUSMODEL_CONFIG_TO_ELEMENT_RELATION] of  %3AESSENTIAL-CLASS
 
@@ -9533,6 +10330,9 @@
 
 	(essential_id "cl746"))
 
+([editor_supporting_config] of  %3AESSENTIAL-SLOT
+)
+
 ([editor_supporting_config_path] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1942"))
@@ -11126,6 +11926,7 @@
 	(editor_is_external FALSE)
 	(editor_sections [essential_baseline_6.5.4_Class303])
 	(name "Core: Application Editor")
+	(report_anchor_class [Composite_Application_Provider])
 	(report_history_label "Application Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -11402,7 +12203,9 @@
 ([essential_baseline_6.5.4_Class320] of  Report
 
 	(description "Supplier usage within the business and impacts of stratgeic plans")
-	(element_classified_by [essential_baseline_v2.0_Class80012])
+	(element_classified_by
+		[essential_baseline_v2.0_Class80012]
+		[essential_baseline_v2.0_Class80008])
 	(name "Core: Supplier Impact Map")
 	(report_history_label "Supplier Impact Map")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
@@ -11413,13 +12216,15 @@
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:35.578Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-02-13T22:18:33.780Z"))
 
 ([essential_baseline_6.5.4_Class322] of  Report
 
 	(description "Supplier licenses overview with options analysis")
-	(element_classified_by [essential_baseline_v2.0_Class80012])
+	(element_classified_by
+		[essential_baseline_v2.0_Class80012]
+		[essential_baseline_v2.0_Class80008])
 	(name "Core: Supplier License Management")
 	(report_history_label "Supplier License Management")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
@@ -11430,8 +12235,8 @@
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:35.579Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-02-13T22:18:09.710Z"))
 
 ([essential_baseline_6.5.4_Class324] of  Report
 
@@ -15663,7 +16468,10 @@
 		[essential_baseline_v6_13_Portal_Class6]
 		[store_82_Class44]
 		[store_82_Class45]
-		[essential_baseline_v6_10_4_Class10082])
+		[essential_baseline_v6_10_4_Class10082]
+		[biabok_Class60013]
+		[essential_baseline_6.5.4_Class320]
+		[essential_baseline_6.5.4_Class322])
 	(description "Views applicable to Enterprise Architecture perspectives")
 	(name "Enterprise Architecture Views")
 	(system_is_published TRUE)
@@ -15793,7 +16601,6 @@
 		[essential_baseline_v3.0.4_Class103]
 		[essential_baseline_v3.0.4_Class88]
 		[essential_baseline_v3.0.4_Class112]
-		[essential_baseline_v3.0.4_Class119]
 		[essential_baseline_v4.0_Class0]
 		[essential_baseline_v4.0_Class3]
 		[essential_baseline_v4.0_Class4]
@@ -15819,7 +16626,8 @@
 		[store_82_Class43]
 		[store_82_Class47]
 		[store_82_Class48]
-		[store_82_Class49])
+		[store_82_Class49]
+		[essential_baseline_v3.0.4_Class119])
 	(description "View focussed on the application layer of the architecture")
 	(name "Application Architecture Views")
 	(system_is_published TRUE)
@@ -15854,11 +16662,11 @@
 		[essential_baseline_v62_Class22]
 		[essential_baseline_v62_Class110]
 		[essential_baseline_v64_Class44]
-		[essential_baseline_6.5.4_Class320]
-		[essential_baseline_6.5.4_Class322]
 		[essential_baseline_6.5.4_Class324]
 		[essential_baseline_6.5.4_Class325]
-		[essential_baseline_v6_10_4_Class10084])
+		[essential_baseline_v6_10_4_Class10084]
+		[essential_baseline_6.5.4_Class320]
+		[essential_baseline_6.5.4_Class322])
 	(description "Views related to and focussed on the Technology Architecture")
 	(name "Technology Architecture Views")
 	(system_is_published TRUE)
@@ -16971,13 +17779,14 @@
 
 ([essential_baseline_v3.0.4_Class119] of  Report
 
-	(description "Provides a graphical view of the inter-application data dependencies that exist for a selected application.")
+	(description "DEPRECEATED: Provides a graphical view of the inter-application data dependencies that exist for a selected application.")
 	(element_classified_by
 		[viewer3_dev_12032012_Class10005]
 		[essential_baseline_v2.0_Class80011]
 		[viewer3_dev_12032012_Class10012]
 		[viewer3_dev_12032012_Class10013]
-		[viewer3_dev_12032012_Class10011])
+		[viewer3_dev_12032012_Class10011]
+		[store_82_Class42])
 	(name "Core: Application Data Dependency Model")
 	(report_context_xsl_filename "application/core_al_app_data_dependencies.xsl")
 	(report_history_label "Application Data Dependency Model -")
@@ -16991,8 +17800,8 @@
 		[essential_baseline_v505_Class850]
 		[essential_baseline_v6_Class164])
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:35.441Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-02-13T22:16:37.466Z"))
 
 ([essential_baseline_v3.0.4_Class12] of  Report_Menu_Group
 
@@ -20423,11 +21232,11 @@
 ([essential_baseline_v3.0_Class10010] of  Meta_Model_Version
 
 	(description "Current version of the Essential Meta Model for Essential Architecture Manager that is being used in this repository.")
-	(meta_model_version_id "6.16")
+	(meta_model_version_id "6.18")
 	(name "Essential Meta Model")
 	(system_is_published TRUE)
 	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-07-26T22:56:33.776Z"))
+	(system_last_modified_datetime_iso8601 "2023-03-23T22:20:58.660Z"))
 
 ([essential_baseline_v3.0_Class2] of  Secured_Action
 
@@ -33091,13 +33900,13 @@
 	(report_is_enabled TRUE)
 	(report_label "Strategy Planner")
 	(report_screenshot_filename "images/screenshots/strategy-planner.png")
-	(report_xsl_filename "enterprise/core_el_strategy_planner.xsl")
+	(report_xsl_filename "enterprise/core_el_strategy_planner_v2.xsl")
 	(synonyms
 		[essential_baseline_v505_Class815]
 		[essential_baseline_v6_Class58])
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:35.430Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-30T11:45:25.749Z"))
 
 ([essential_baseline_v64_Class22] of  Report
 
@@ -36897,6 +37706,7 @@
 		[Group_Actor])
 	(editor_sections [essential_baseline_v6_7_Class1])
 	(name "Core: Business Process Editor")
+	(report_anchor_class [Business_Process])
 	(report_history_label "Business Process Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -36944,6 +37754,7 @@
 		[Group_Actor])
 	(editor_sections [essential_baseline_v6_7_Class3])
 	(name "Core: Technology Product Editor")
+	(report_anchor_class [Technology_Product])
 	(report_history_label "Technology Product Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -36980,6 +37791,7 @@
 		[Group_Actor])
 	(editor_sections [essential_baseline_v6_7_Class5])
 	(name "Core: Technology Component Editor")
+	(report_anchor_class [Technology_Component])
 	(report_history_label "Technology Type Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -37823,6 +38635,7 @@
 		[Contract])
 	(editor_sections [essential_baseline_v6_9_Class12])
 	(name "Core: Supplier Editor")
+	(report_anchor_class [Supplier])
 	(report_history_label "Supplier and Contracts Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -43885,6 +44698,9 @@
 
 	(essential_id "sl732"))
 
+([is_root] of  %3AESSENTIAL-SLOT
+)
+
 ([is_type_of_skill] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl733"))
@@ -44848,6 +45664,12 @@
 ([policy_controls] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1726"))
+
+([policy_implications] of  %3AESSENTIAL-SLOT
+)
+
+([policy_rationale] of  %3AESSENTIAL-SLOT
+)
 
 ([Portal] of  %3AESSENTIAL-CLASS
 
@@ -46956,6 +47778,9 @@
 
 	(essential_id "sl1182"))
 
+([Software_Architecture_Layer] of  %3AESSENTIAL-CLASS
+)
+
 ([software_architecture_layer] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1183"))
@@ -46967,6 +47792,9 @@
 ([Software_Component] of  %3AESSENTIAL-CLASS
 
 	(essential_id "cl507"))
+
+([software_component_architecture_layer] of  %3AESSENTIAL-SLOT
+)
 
 ([Software_Component_Usage] of  %3AESSENTIAL-CLASS
 
@@ -48667,6 +49495,7 @@
 
 ([store_55_Class37] of  Viewer_Code_Library_Type
 
+	(enumeration_value "Javascript Library")
 	(name "Javascript Library")
 	(system_author_id "neil.walsh@e-asolutions.com")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -48674,8 +49503,8 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2022-02-11T12:26:20.292Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:34.242Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:37:03.652Z"))
 
 ([store_55_Class38] of  Viewer_Code_Library
 
@@ -48731,13 +49560,14 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2020-11-18T11:04:25.880Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-04T17:27:20.932Z")
+	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2022-08-12T16:46:30.541Z")
 	(vcl_included_html_path "js/jquery-ui/jquery_ui_styles_links.html")
 	(vcl_library_type [store_55_Class41]))
 
 ([store_55_Class41] of  Viewer_Code_Library_Type
 
+	(enumeration_value "CSS Library")
 	(name "CSS Library")
 	(system_author_id "neil.walsh@e-asolutions.com")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -48745,8 +49575,8 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2022-02-11T12:26:20.328Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-02-11T12:26:34.236Z"))
+	(system_last_modified_author_id "jason.powell@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2023-03-23T17:37:10.210Z"))
 
 ([store_55_Class42] of  Viewer_Code_Library
 
@@ -50053,7 +50883,10 @@
 	(system_creation_datetime_iso8601 "2020-11-18T10:57:29.944Z")
 	(system_is_published TRUE)
 	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-03-27T21:48:48.038Z"))
+	(system_last_modified_datetime_iso8601 "2022-12-14T13:52:02.807Z")
+	(viewer_code_libraries
+		[store_55_Class52]
+		[store_55_Class39]))
 
 ([store_82_Class23] of  Editor_Component_Configurator
 
@@ -50070,8 +50903,8 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2022-03-27T21:48:48.034Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-04-08T18:16:59.951Z"))
+	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2022-08-12T16:46:31.479Z"))
 
 ([store_82_Class24] of  Editor_Component
 
@@ -50136,8 +50969,8 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2020-11-18T10:57:29.944Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-03-27T21:48:48.000Z"))
+	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2022-08-12T16:46:31.225Z"))
 
 ([store_82_Class27] of  Editor_Component_Configurator
 
@@ -50154,8 +50987,8 @@
 	(system_content_visibility [essential_baseline_6.5.4_Class68])
 	(system_creation_datetime_iso8601 "2022-03-27T21:48:47.996Z")
 	(system_is_published TRUE)
-	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-04-08T18:16:40.255Z"))
+	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2022-08-12T16:46:31.442Z"))
 
 ([store_82_Class28] of  Editor_Component
 
@@ -50291,7 +51124,16 @@
 		[store_82_Class19]
 		[store_82_Class20]
 		[store_82_Class18]
-		[store_82_Class31])
+		[store_82_Class31]
+		[biabok_Class60004]
+		[biabok_Class60022]
+		[biabok_Class60024]
+		[biabok_Class60026]
+		[biabok_Class60028]
+		[biabok_Class60030]
+		[biabok_Class60032]
+		[biabok_Class60036]
+		[biabok_Class60034])
 	(ce_editor_js_path "editors/configurable/editor_builder_framework_js.xsl")
 	(editor_is_external FALSE)
 	(editor_sections [store_82_Class34])
@@ -50299,7 +51141,7 @@
 	(report_anchor_class [Configured_Editor])
 	(report_history_label "Editor Builder")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
-	(report_is_enabled FALSE)
+	(report_is_enabled TRUE)
 	(report_label "Editor Builder")
 	(report_pdf_configuration [essential_baseline_v6_10_4_Class10014])
 	(report_xsl_filename "editors/configurable/framework/builder/editor_builder_framework.html")
@@ -50310,7 +51152,7 @@
 	(system_creation_datetime_iso8601 "2020-11-28T21:08:03.378Z")
 	(system_is_published TRUE)
 	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-06-13T10:34:55.032Z")
+	(system_last_modified_datetime_iso8601 "2023-04-06T16:52:28.271Z")
 	(viewer_code_libraries [store_82_Class0]))
 
 ([store_82_Class34] of  Editor_Section
@@ -50515,7 +51357,8 @@
 		[essential_baseline_v6_8_Class57]
 		[essential_baseline_v6_9_Class2]
 		[essential_baseline_v6_Class14]
-		[essential_baseline_v6_Class182])
+		[essential_baseline_v6_Class182]
+		[essential_baseline_v3.0.4_Class119])
 	(name "Deprecated Views")
 	(system_author_id "jason.powell@e-asolutions.com")
 	(system_content_lifecycle_status [essential_baseline_6.5.4_Class67])
@@ -50783,8 +51626,8 @@
 	(system_creation_datetime_iso8601 "2022-07-28T11:01:09.466Z")
 	(system_ea_reference_instance_counter 0)
 	(system_is_published TRUE)
-	(system_last_modified_author_id "jason.powell@e-asolutions.com")
-	(system_last_modified_datetime_iso8601 "2022-07-28T11:01:09.487Z"))
+	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
+	(system_last_modified_datetime_iso8601 "2022-08-12T16:47:10.312Z"))
 
 ([store_82_Class55] of  Data_Set_API
 
@@ -50869,6 +51712,7 @@
 	(description "Application Management editor without the ability to maintain application dependencies and application deployments")
 	(editor_is_external FALSE)
 	(name "Core: Application Editor - Reduced Scope")
+	(report_anchor_class [Composite_Application_Provider])
 	(report_history_label "Application Editor")
 	(report_implementation_type [viewer3_devrep_14032012_003_Class10015])
 	(report_is_enabled FALSE)
@@ -51765,6 +52609,15 @@
 
 	(essential_id "sl1308"))
 
+([TECH_NODE_TO_TECH_NODE_CONNECTION] of  %3AESSENTIAL-CLASS
+)
+
+([tech_node_to_tech_node_from_tech_node] of  %3AESSENTIAL-SLOT
+)
+
+([tech_node_to_tech_node_to_tech_node] of  %3AESSENTIAL-SLOT
+)
+
 ([tech_physical_contained_in_arch_states] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1309"))
@@ -51989,9 +52842,21 @@
 
 	(essential_id "sl1333"))
 
+([technology_node_inbound_connections] of  %3AESSENTIAL-SLOT
+)
+
+([technology_node_outbound_connections] of  %3AESSENTIAL-SLOT
+)
+
 ([technology_node_platform_stack] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1766"))
+
+([Technology_Node_Type] of  %3AESSENTIAL-CLASS
+)
+
+([technology_node_type] of  %3AESSENTIAL-SLOT
+)
 
 ([technology_objective_rationale] of  %3AESSENTIAL-SLOT
 
@@ -52128,6 +52993,9 @@
 ([technology_provider_version] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1587"))
+
+([Technology_Relation] of  %3AESSENTIAL-CLASS
+)
 
 ([Technology_Service_Quality] of  %3AESSENTIAL-CLASS
 
@@ -52850,7 +53718,6 @@
 		[essential_baseline_v3.0.4_Class106]
 		[essential_baseline_v3.0.4_Class88]
 		[essential_baseline_v3.0.4_Class112]
-		[essential_baseline_v3.0.4_Class119]
 		[essential_baseline_v3.0.4_Class113]
 		[essential_baseline_v3.0.4_Class120]
 		[essential_baseline_v4.0_Class0]
@@ -52870,7 +53737,8 @@
 		[essential_baseline_v4.0_Class5]
 		[essential_baseline_v6_Class182]
 		[essential_baseline_v64_Class24]
-		[essential_baseline_6.5.4_Class332])
+		[essential_baseline_6.5.4_Class332]
+		[essential_baseline_v3.0.4_Class119])
 	(description "Term used to classify EA elements as being relevant to Project Delivery")
 	(name "Project Delivery View Filter")
 	(system_is_published TRUE)
@@ -53053,13 +53921,13 @@
 		[essential_baseline_v3.0.4_Class111]
 		[essential_baseline_v3.0.4_Class88]
 		[essential_baseline_v3.0.4_Class112]
-		[essential_baseline_v3.0.4_Class119]
 		[essential_baseline_v3.0.4_Class113]
 		[essential_baseline_v3.0.4_Class123]
 		[essential_baseline_v4.0_Class3]
 		[essential_baseline_v64_Class24]
 		[essential_baseline_v64_Class28]
-		[essential_baseline_6.5.4_Class332])
+		[essential_baseline_6.5.4_Class332]
+		[essential_baseline_v3.0.4_Class119])
 	(description "Term used to classify EA elements as being relevant to Information Architects")
 	(name "Information Architect View Filter")
 	(system_is_published TRUE)
@@ -53126,7 +53994,6 @@
 		[essential_baseline_v3.0.4_Class111]
 		[essential_baseline_v3.0.4_Class88]
 		[essential_baseline_v3.0.4_Class112]
-		[essential_baseline_v3.0.4_Class119]
 		[essential_baseline_v3.0.4_Class208]
 		[essential_baseline_v3.0.4_Class113]
 		[essential_baseline_v3.0.4_Class120]
@@ -53146,7 +54013,8 @@
 		[essential_baseline_v4.0_Class5]
 		[essential_baseline_v6_Class182]
 		[essential_baseline_v64_Class24]
-		[essential_baseline_v64_Class28])
+		[essential_baseline_v64_Class28]
+		[essential_baseline_v3.0.4_Class119])
 	(description "Term used to classify EA elements as being relevant to Data Architects")
 	(name "Data Architect View Filter")
 	(system_is_published TRUE)
@@ -53224,7 +54092,6 @@
 		[essential_baseline_v3.0.4_Class111]
 		[essential_baseline_v3.0.4_Class88]
 		[essential_baseline_v3.0.4_Class112]
-		[essential_baseline_v3.0.4_Class119]
 		[essential_baseline_v3.0.4_Class208]
 		[essential_baseline_v3.0.4_Class113]
 		[essential_baseline_v3.0.4_Class120]
@@ -53249,7 +54116,8 @@
 		[essential_baseline_v62_Class25]
 		[essential_baseline_v64_Class24]
 		[essential_baseline_v64_Class28]
-		[essential_baseline_6.5.4_Class332])
+		[essential_baseline_6.5.4_Class332]
+		[essential_baseline_v3.0.4_Class119])
 	(description "Term used to classify EA elements as being relevant to Application Architects")
 	(name "Application Architect View Filter")
 	(system_is_published TRUE)
@@ -53679,7 +54547,8 @@
 		[essential_baseline_v6_12_Class66]
 		[essential_baseline_v6_12_Class68]
 		[store_43_Class77]
-		[store_82_Class46])
+		[store_82_Class46]
+		[biabok_Class60012])
 	(name "Support Views")
 	(system_is_published TRUE)
 	(system_last_modified_author_id "neil.walsh@e-asolutions.com")
@@ -53864,6 +54733,9 @@
 ([vs_value_stages] of  %3AESSENTIAL-SLOT
 
 	(essential_id "sl1433"))
+
+([vsg_display_label] of  %3AESSENTIAL-SLOT
+)
 
 ([vsg_emotions] of  %3AESSENTIAL-SLOT
 

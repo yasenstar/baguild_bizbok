@@ -1,4 +1,4 @@
-; Mon May 29 23:11:06 EDT 2023
+; Thu Jun 01 22:58:00 EDT 2023
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -137,6 +137,12 @@
 ;+		(comment "The value for this enumeration")
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot act_to_obj_for_element
+;+		(comment "The element against which the objective has been defined for the Actor")
+		(type INSTANCE)
+;+		(allowed-classes EA_Class EA_Relation %3AEA_Graph_Relation)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot to_data_standard_relation
 ;+		(comment "The Data Standard that is the target (to end) of the relationship")
@@ -348,6 +354,12 @@
 ;+		(allowed-classes Change_Milestone)
 ;+		(inverse-slot cm_change_activity)
 		(create-accessor read-write))
+	(multislot app_pro_to_inforep_exchanges
+;+		(comment "The information exchanges that involve this information provided by the application")
+		(type INSTANCE)
+;+		(allowed-classes APP_PRO_TO_INFOREP_EXCHANGE_RELATION)
+;+		(inverse-slot atire_app_pro_to_inforep)
+		(create-accessor read-write))
 	(single-slot is_business_role_type
 ;+		(comment "Slot from a Business Role to the Business Role Type, that the Role is an instance/type of.")
 		(type INSTANCE)
@@ -459,10 +471,15 @@
 		(default TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot editor_supporting_config
+;+		(comment "Used to hold configuration that is specific to this Editor instance (typically in JSON format)")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot software_architecture_layer
 ;+		(comment "The architecture layer of the element contained within the Software Architecture of an Application Provider")
-		(type SYMBOL)
-		(allowed-values Business_Logic User_Presentation Data System_Presentation)
+		(type INSTANCE)
+;+		(allowed-classes Software_Architecture_Layer)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot roadmap_model_group_subjects
@@ -580,6 +597,16 @@
 		(create-accessor read-write))
 	(single-slot lifecycle_model_type_label
 ;+		(comment "A label for a Lifecycle Model Type element that is used on the Lifecycle Model diagram.")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot vsg_display_label
+;+		(comment "The short label for the Value Stage")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot policy_implications
+;+		(comment "Describes the implications of applying the policy for the enterprise")
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -2338,7 +2365,7 @@
 		(type STRING)
 		(create-accessor read-write))
 	(single-slot data_subject_individual_owner
-;+		(comment "Slot to capture the owner (individual) of a Data Subject in terms of an Individual Actor in the business layer")
+;+		(comment "DEPRECATED - Slot to capture the owner (individual) of a Data Subject in terms of an Individual Actor in the business layer.\\n\\nUse 'stakeholders' slot with ACTOR_TO_ROLE_RELATION instances")
 		(type INSTANCE)
 ;+		(allowed-classes Individual_Actor)
 ;+		(cardinality 0 1)
@@ -3016,7 +3043,7 @@
 ;+		(inverse-slot used_in_technology_provider_architecture)
 		(create-accessor read-write))
 	(single-slot data_subject_organisation_owner
-;+		(comment "Slot to capture the organisation that owns the Data Subject in terms of a Group Actor in the business layer")
+;+		(comment "DEPRECATED - Slot to capture the organisation that owns the Data Subject in terms of a Group Actor in the business layer\\n\\nUse 'stakeholders' slot with ACTOR_TO_ROLE_RELATION instances")
 		(type INSTANCE)
 ;+		(allowed-classes Group_Actor)
 ;+		(cardinality 0 1)
@@ -4443,6 +4470,7 @@
 		(type INSTANCE)
 ;+		(allowed-classes APP_PRO_TO_INFOREP_RELATION)
 ;+		(cardinality 1 1)
+;+		(inverse-slot app_pro_to_inforep_exchanges)
 		(create-accessor read-write))
 	(multislot pt_product_type_features
 ;+		(comment "The features that are provided by this product type")
@@ -6614,7 +6642,7 @@
 		(cardinality 1 ?VARIABLE)
 		(create-accessor read-write))
 	(single-slot vsg_label
-;+		(comment "The name of the Value Stage")
+;+		(comment "DEPRECATED: The name of the Value Stage\\n\\nNOTE: Use vsg_display_label slot")
 		(type INSTANCE)
 ;+		(allowed-classes Label)
 ;+		(cardinality 1 1)
@@ -6640,6 +6668,12 @@
 ;+		(comment "The string that is passed as the parameter name")
 		(type STRING)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot business_term_related_terms
+;+		(comment "The Business Terms that are related to this Business Term")
+		(type INSTANCE)
+;+		(allowed-classes Business_Term)
+;+		(inverse-slot business_term_related_terms)
 		(create-accessor read-write))
 	(multislot info_logical_contained_in_arch_states
 ;+		(comment "The architecture states that contain this logical information element")
@@ -6718,6 +6752,11 @@
 ;+		(allowed-classes Application_Provider)
 ;+		(cardinality 1 1)
 ;+		(inverse-slot provides_application_services)
+		(create-accessor read-write))
+	(single-slot business_term_examples
+;+		(comment "One or more examples of ways in which the Business Term is typically used")
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot objective_supported_by_strategic_plan
 ;+		(comment "Slot to manage the set of Strategic Plans that support an objective (Business Objective, Application Architecture Objective, Information Architecture Objective and Technology Architecture Objectives)")
@@ -6912,6 +6951,12 @@
 ;+		(allowed-classes APP_FUNIMPL_TO_BUS_RELATION)
 ;+		(inverse-slot appfunimpl_to_physbus_to_busproc)
 		(create-accessor read-write))
+	(single-slot technology_node_type
+;+		(comment "Defines the nature of the technology node, e.g. Physical Server, Firewall, Virtual Server, VLAN, LAN, WAN, Cloud Region")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node_Type)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot control_assessed_element
 ;+		(comment "")
 		(type INSTANCE)
@@ -6945,6 +6990,12 @@
 ;+		(comment "The set of application elements that are related to the risk")
 		(type INSTANCE)
 ;+		(allowed-classes Application_Layer)
+		(create-accessor read-write))
+	(single-slot software_component_architecture_layer
+;+		(comment "Defines the logical Software Architecture Layer in which the Software Component should be placed")
+		(type INSTANCE)
+;+		(allowed-classes Software_Architecture_Layer)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3Arelation_in_business_model_architecture
 ;+		(comment "The Business Model Architecture in which this dependency is defined")
@@ -7642,6 +7693,12 @@
 		(type INSTANCE)
 ;+		(allowed-classes Roadmap)
 		(create-accessor read-write))
+	(multislot technology_node_outbound_connections
+;+		(comment "Defines the outbound connections from this Technology Node to other Technology Nodes")
+		(type INSTANCE)
+;+		(allowed-classes TECH_NODE_TO_TECH_NODE_CONNECTION)
+;+		(inverse-slot tech_node_to_tech_node_from_tech_node)
+		(create-accessor read-write))
 	(multislot inforep_used_by_app_pro
 ;+		(comment "The Application Providers that use this Information Representation")
 		(type INSTANCE)
@@ -7830,6 +7887,13 @@
 ;+		(allowed-classes Business_Event)
 ;+		(inverse-slot type_of_event)
 		(create-accessor read-write))
+	(single-slot is_root
+;+		(comment "Defines whether this element is the root element of a hierarchy")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot system_cq_review_policy_instance_table_body_template_path
 ;+		(comment "The path to the content template that should be used to generate rows in the review dashboard instance table")
 		(type STRING)
@@ -7984,6 +8048,13 @@
 		(type INSTANCE)
 ;+		(allowed-classes ACTOR_TO_ROLE_RELATION)
 ;+		(inverse-slot act_to_role_to_role)
+		(create-accessor read-write))
+	(single-slot tech_node_to_tech_node_from_tech_node
+;+		(comment "The Technology Node from which the connection is established")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node)
+;+		(cardinality 1 1)
+;+		(inverse-slot technology_node_outbound_connections)
 		(create-accessor read-write))
 	(single-slot report_screenshot_filename
 ;+		(comment "Slot to define the relative URL to a screenshot image for a Report instance. Typically, this is an png or jpeg file.")
@@ -10331,6 +10402,11 @@
 		(type INSTANCE)
 ;+		(allowed-classes Technology_Driver)
 		(create-accessor read-write))
+	(single-slot policy_rationale
+;+		(comment "Describes the reasons why the Policy has been put in place")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot bd_has_app_implications
 ;+		(comment "The of Application Drivers for which an business driver has implications.")
 		(type INSTANCE)
@@ -10385,6 +10461,13 @@
 ;+		(comment "Defines an integer value for the Service Quality Value")
 		(type INTEGER)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tech_node_to_tech_node_to_tech_node
+;+		(comment "The Technology Node to which the connection is established")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node)
+;+		(cardinality 1 1)
+;+		(inverse-slot technology_node_inbound_connections)
 		(create-accessor read-write))
 	(multislot bpf_contained_business_process_types
 ;+		(comment "DEPRECTAED: REPLACED BY DIRECT RELATIONSHIP\nThe business processes, activities or tasks that form this business process family")
@@ -11029,6 +11112,12 @@
 ;+		(allowed-classes Data_Acquisition_Method)
 		(default [essential_baseline_v2.0_Class20000])
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot technology_node_inbound_connections
+;+		(comment "Defines the inbound connections to this Technology Node from other Technology Nodes")
+		(type INSTANCE)
+;+		(allowed-classes TECH_NODE_TO_TECH_NODE_CONNECTION)
+;+		(inverse-slot tech_node_to_tech_node_to_tech_node)
 		(create-accessor read-write))
 	(multislot application_reference_implementation_elements
 ;+		(comment "The elements that comprise the Application Reference Implementation Model")
@@ -11870,7 +11959,7 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass Business_Capability "Models the capabilities of a business or enterprise. Capabilities belong to business domains and represent the services that a business offers or requires or Business Process \\\\\\\"areas\\\\\\\""
+(defclass Business_Capability "Models the capabilities of a business or enterprise. Capabilities belong to business domains and represent the services that a business offers or requires or Business Process \\\\\\\\\"areas\\\\\\\\\""
 	(is-a Business_Conceptual)
 	(role concrete)
 	(multislot known_business_issues
@@ -11961,6 +12050,13 @@
 ;+		(comment "Defines the granularity of the business capability (0 = coarse grained, 5 = fine grained)")
 		(type SYMBOL)
 		(allowed-values 0 1 2 3 4 5)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot is_root
+;+		(comment "Defines whether this element is the root element of a hierarchy")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot supersedes_version
@@ -12488,7 +12584,7 @@
 ;+		(allowed-classes Business_Capability)
 		(create-accessor read-write))
 	(single-slot vsg_label
-;+		(comment "The name of the Value Stage")
+;+		(comment "DEPRECATED: The name of the Value Stage\\n\\nNOTE: Use vsg_display_label slot")
 		(type INSTANCE)
 ;+		(allowed-classes Label)
 ;+		(cardinality 1 1)
@@ -12502,6 +12598,11 @@
 ;+		(comment "The emotions felt by participants in the value stage")
 		(type INSTANCE)
 ;+		(allowed-classes VALUE_STAGE_TO_EMOTION_RELATION)
+		(create-accessor read-write))
+	(single-slot vsg_display_label
+;+		(comment "The short label for the Value Stage")
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot vsg_value_stream
 ;+		(comment "The parent Value Stream or Value Stage that contains this Value Stage")
@@ -14333,6 +14434,13 @@
 		(type INSTANCE)
 ;+		(allowed-classes Actor)
 		(create-accessor read-write))
+	(single-slot is_root
+;+		(comment "Defines whether this element is the root element of a hierarchy")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(multislot group_actor_applied_business_model_configurations
 ;+		(comment "The Business Model Configurations that have been applied in the design of the Group Actor, its processes prerformed and supporting technology")
 		(type INSTANCE)
@@ -15283,8 +15391,8 @@
 		(create-accessor read-write))
 	(single-slot software_architecture_layer
 ;+		(comment "The architecture layer of the element contained within the Software Architecture of an Application Provider")
-		(type SYMBOL)
-		(allowed-values Business_Logic User_Presentation Data System_Presentation)
+		(type INSTANCE)
+;+		(allowed-classes Software_Architecture_Layer)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot software_from_tech_prod_role
@@ -15303,6 +15411,12 @@
 ;+		(comment "Specifies the set of Application Function Implementations that this software component delivers")
 		(type INSTANCE)
 ;+		(allowed-classes Application_Function_Implementation)
+		(create-accessor read-write))
+	(single-slot software_component_architecture_layer
+;+		(comment "Defines the logical Software Architecture Layer in which the Software Component should be placed")
+		(type INSTANCE)
+;+		(allowed-classes Software_Architecture_Layer)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass System_Event "Class of elements describing events that occur in the application layer."
@@ -16196,13 +16310,13 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot data_subject_organisation_owner
-;+		(comment "Slot to capture the organisation that owns the Data Subject in terms of a Group Actor in the business layer")
+;+		(comment "DEPRECATED - Slot to capture the organisation that owns the Data Subject in terms of a Group Actor in the business layer\\n\\nUse 'stakeholders' slot with ACTOR_TO_ROLE_RELATION instances")
 		(type INSTANCE)
 ;+		(allowed-classes Group_Actor)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot data_subject_individual_owner
-;+		(comment "Slot to capture the owner (individual) of a Data Subject in terms of an Individual Actor in the business layer")
+;+		(comment "DEPRECATED - Slot to capture the owner (individual) of a Data Subject in terms of an Individual Actor in the business layer.\\n\\nUse 'stakeholders' slot with ACTOR_TO_ROLE_RELATION instances")
 		(type INSTANCE)
 ;+		(allowed-classes Individual_Actor)
 ;+		(cardinality 0 1)
@@ -16361,6 +16475,26 @@
 ;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
 		(type INSTANCE)
 ;+		(allowed-classes Information_Domain)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Business_Term "A word or phrase that describes a concept that is used by the business"
+	(is-a Information_Conceptual)
+	(role concrete)
+	(multislot business_term_related_terms
+;+		(comment "The Business Terms that are related to this Business Term")
+		(type INSTANCE)
+;+		(allowed-classes Business_Term)
+		(create-accessor read-write))
+	(single-slot business_term_examples
+;+		(comment "One or more examples of ways in which the Business Term is typically used")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Information_Conceptual)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -18372,16 +18506,49 @@
 (defclass Technology_Node "A locate-able Node in the infrastructure on which other Nodes and Technology Instances are deployed."
 	(is-a Technology_Physical)
 	(role concrete)
+	(multislot used_in_technology_build
+;+		(comment "Slot capturing the architectures (Product Builds) that reference this Technology Node. Holds the specific element in the build that refers to this Node.")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Provider_Usage)
+		(create-accessor read-write))
+	(single-slot name_
+;+		(comment "A descriptive name of the element in the model (NOTE: A unique, internal reference is managed separately by the system.)")
+		(type STRING)
+		(default "<technology node name>")
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot technology_node_inbound_connections
+;+		(comment "Defines the inbound connections to this Technology Node from other Technology Nodes")
+		(type INSTANCE)
+;+		(allowed-classes TECH_NODE_TO_TECH_NODE_CONNECTION)
+		(create-accessor read-write))
+	(multislot inverse_of_contained_technology_nodes
+;+		(comment "The set of Technology Nodes in which this node is contained.")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node)
+		(create-accessor read-write))
+	(multislot technology_node_platform_stack
+;+		(comment "Defines the list of Technology Provider Roles that have been used to implement the Technology Node as a platform, e.g. Hardware, Operating System, built-in runtime software")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Provider_Role)
+		(create-accessor read-write))
+	(single-slot tn_supplier
+;+		(comment "")
+		(type INSTANCE)
+;+		(allowed-classes Supplier)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot technology_node_type
+;+		(comment "Defines the nature of the technology node, e.g. Physical Server, Firewall, Virtual Server, VLAN, LAN, WAN, Cloud Region")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node_Type)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot technology_deployment_located_at
 ;+		(comment "The Site at which this physical deployment is located.")
 		(type INSTANCE)
 ;+		(allowed-classes Site)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot used_in_technology_build
-;+		(comment "Slot capturing the architectures (Product Builds) that reference this Technology Node. Holds the specific element in the build that refers to this Node.")
-		(type INSTANCE)
-;+		(allowed-classes Technology_Provider_Usage)
 		(create-accessor read-write))
 	(multislot technology_node_attributes
 ;+		(comment "The set of Attribute Values that a Technology Node has")
@@ -18400,32 +18567,15 @@
 ;+		(allowed-classes Business_Criticality)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot name_
-;+		(comment "A descriptive name of the element in the model.\\n(NOTE: A unique, internal reference is managed separately by the system.)")
-		(type STRING)
-		(default "<technology node name>")
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot contained_technology_instances
 ;+		(comment "The set of Technology Instances that are deployed to a Technology Deployment")
 		(type INSTANCE)
 ;+		(allowed-classes Technology_Instance)
 		(create-accessor read-write))
-	(multislot inverse_of_contained_technology_nodes
-;+		(comment "The set of Technology Nodes in which this node is contained.")
+	(multislot technology_node_outbound_connections
+;+		(comment "Defines the outbound connections from this Technology Node to other Technology Nodes")
 		(type INSTANCE)
-;+		(allowed-classes Technology_Node)
-		(create-accessor read-write))
-	(multislot technology_node_platform_stack
-;+		(comment "Defines the list of Technology Provider Roles that have been used to implement the Technology Node as a platform, e.g. Hardware, Operating System, built-in runtime software")
-		(type INSTANCE)
-;+		(allowed-classes Technology_Provider_Role)
-		(create-accessor read-write))
-	(single-slot tn_supplier
-;+		(comment "")
-		(type INSTANCE)
-;+		(allowed-classes Supplier)
-;+		(cardinality 0 1)
+;+		(allowed-classes TECH_NODE_TO_TECH_NODE_CONNECTION)
 		(create-accessor read-write))
 	(single-slot supersedes_version
 ;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
@@ -20733,10 +20883,20 @@
 		(type INSTANCE)
 ;+		(allowed-classes Control)
 		(create-accessor read-write))
+	(single-slot policy_implications
+;+		(comment "Describes the implications of applying the policy for the enterprise")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot supersedes_version
 ;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
 		(type INSTANCE)
 ;+		(allowed-classes EA_Support)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot policy_rationale
+;+		(comment "Describes the reasons why the Policy has been put in place")
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
@@ -23294,6 +23454,27 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
+(defclass API_Lifecycle_Model "A Lifecycle Model that defines the progress of an Application Provider Interface through its lifecycle stages"
+	(is-a Lifecycle_Model)
+	(role concrete)
+	(multislot element_classified_by
+;+		(comment "Slot to capture the classification(s) that apply to an element in the ontology. Add this slot to any class that is to be managed by a Taxonomy.")
+		(type INSTANCE)
+;+		(allowed-classes Taxonomy_Term)
+		(default [essential_baseline_v64_Class2])
+		(create-accessor read-write))
+	(multislot contained_lifecycle_model_elements
+;+		(comment "The set of elements that are used to define a Lifecycle Model.")
+		(type INSTANCE)
+;+		(allowed-classes API_Lifecycle_Status_Usage)
+		(create-accessor read-write))
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Lifecycle_Model)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
 (defclass Lifecycle_Model_Types "Base class for the set of classes that are used to construct a Lifecycle Model."
 	(is-a Lifecycle_Management)
 	(role abstract)
@@ -23366,6 +23547,12 @@
 (defclass Project_Lifecycle_Status_Usage "Usage of a Project Lifecycle Status in a particular project lifecycle model, capturing the contextual information and relationships about the use of a Project Lifecycle Status."
 	(is-a Lifecycle_Status_Usage)
 	(role concrete)
+	(single-slot lcm_lifecycle_status
+;+		(comment "The Lifecycle Status element that is being used in a Lifecycle Model.")
+		(type INSTANCE)
+;+		(allowed-classes Project_Lifecycle_Status)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot supersedes_version
 ;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
 		(type INSTANCE)
@@ -23380,6 +23567,12 @@
 ;+		(comment "The estimated number of days of effort that will be spent for the disposition period")
 		(type INTEGER)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot lcm_lifecycle_status
+;+		(comment "The Lifecycle Status element that is being used in a Lifecycle Model.")
+		(type INSTANCE)
+;+		(allowed-classes Disposition_Lifecycle_Status)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot supersedes_version
 ;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
@@ -23411,6 +23604,28 @@
 ;+		(comment "The Lifecycle Status element that is being used in a Lifecycle Model.")
 		(type INSTANCE)
 ;+		(allowed-classes Product_Lifecycle_Status)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Lifecycle_Status_Usage)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass API_Lifecycle_Status_Usage "A usage of an API Lifecycle Status in teh lifecycle model of an Application Provider Interface"
+	(is-a Lifecycle_Status_Usage)
+	(role concrete)
+	(single-slot lcm_lifecycle_status
+;+		(comment "The Lifecycle Status element that is being used in a Lifecycle Model.")
+		(type INSTANCE)
+;+		(allowed-classes API_Lifecycle_Status)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot used_in_lifecycle_model
+;+		(comment "The Lifecycle Model in which the Lifecycle Model Type element exists.")
+		(type INSTANCE)
+;+		(allowed-classes API_Lifecycle_Model)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot supersedes_version
@@ -24336,6 +24551,16 @@
 		(create-accessor read-write)))
 
 (defclass Purchase_Status "Defines the stages that an EA element can progress through from a purchasing perspective"
+	(is-a Lifecycle_Status)
+	(role concrete)
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Lifecycle_Status)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass API_Lifecycle_Status "Defines the lifecycle status of an Application Provider Interface"
 	(is-a Lifecycle_Status)
 	(role concrete)
 	(single-slot supersedes_version
@@ -25340,6 +25565,26 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
+(defclass Software_Architecture_Layer "Defines a logical layer of a Software Arfchitecture to which a Software Component belongs"
+	(is-a Enumeration)
+	(role concrete)
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Enumeration)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Technology_Node_Type "Defines the nature of a technology node, e.g. physical server, firewall, virtual server, VLAN, WAN"
+	(is-a Enumeration)
+	(role concrete)
+	(single-slot supersedes_version
+;+		(comment "Slot to capture the instance of which this instance is a new version. i.e. Use this slot to define the instance that represents the previous version of the element being considered. Allowed classes must always be a single class of the same type as the domain. e.g. a Technology_Product can only supersede another Technology_Product.")
+		(type INSTANCE)
+;+		(allowed-classes Enumeration)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
 (defclass Time "Abstract class to manage instances that represent time, e.g. dates, quarter years, years."
 	(is-a Utilities)
 	(role abstract)
@@ -25770,6 +26015,11 @@
 ;+		(comment "The Data Set APIs tha are accessed by the Editor")
 		(type INSTANCE)
 ;+		(allowed-classes Data_Set_API)
+		(create-accessor read-write))
+	(single-slot editor_supporting_config
+;+		(comment "Used to hold configuration that is specific to this Editor instance (typically in JSON format)")
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(multislot editor_menu_link_classes
 ;+		(comment "The set of classes for which menu links are used in the Editor")
@@ -28325,23 +28575,6 @@
 ;+		(allowed-classes Information_Representation_Type)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot app_pro_to_inforep_delivery_approach
-;+		(comment "Describes how the application delivers the information representation (e.g. email, shared drive, paper document)")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot app_pro_persists_info_rep
-;+		(comment "Defines whether the Application Provider persists data in the form of the Information Representation")
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-		(default FALSE)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot used_in_app_dependencies
-;+		(comment "Defines a list of application dependencies in which this information is exchanged")
-		(type INSTANCE)
-;+		(allowed-classes %3AAPU-TO-APU-STATIC-RELATION)
-		(create-accessor read-write))
 	(single-slot app_pro_to_inforep_from_app
 ;+		(comment "The Application Provider that uses the Information Representation")
 		(type INSTANCE)
@@ -28374,17 +28607,39 @@
 		(default Unknown)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot app_pro_to_inforep_security_access
-;+		(comment "Describes the nature of security access for the information representation provided by the application")
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot app_pro_updates_info_rep
 ;+		(comment "Determines whether the Application Provider updates the Information Representation")
 		(type SYMBOL)
 		(allowed-values Yes No Unknown)
 		(default Unknown)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot app_pro_to_inforep_delivery_approach
+;+		(comment "Describes how the application delivers the information representation (e.g. email, shared drive, paper document)")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot app_pro_persists_info_rep
+;+		(comment "Defines whether the Application Provider persists data in the form of the Information Representation")
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot used_in_app_dependencies
+;+		(comment "Defines a list of application dependencies in which this information is exchanged")
+		(type INSTANCE)
+;+		(allowed-classes %3AAPU-TO-APU-STATIC-RELATION)
+		(create-accessor read-write))
+	(multislot app_pro_to_inforep_exchanges
+;+		(comment "The information exchanges that involve this information provided by the application")
+		(type INSTANCE)
+;+		(allowed-classes APP_PRO_TO_INFOREP_EXCHANGE_RELATION)
+		(create-accessor read-write))
+	(single-slot app_pro_to_inforep_security_access
+;+		(comment "Describes the nature of security access for the information representation provided by the application")
+		(type STRING)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass APP_PRO_TO_INFOREP_TO_DATAREP_RELATION "Describes a specific Data Representation that is used by an Application Provider in the context of an Information Representation"
@@ -28710,6 +28965,12 @@
 		(type INSTANCE)
 ;+		(allowed-classes Actor)
 ;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot act_to_obj_for_element
+;+		(comment "The element against which the objective has been defined for the Actor")
+		(type INSTANCE)
+;+		(allowed-classes EA_Class EA_Relation %3AEA_Graph_Relation)
+;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
 (defclass OBJ_TO_SVC_QUALITY_RELATION "Relationship that captures a Business Objective being measured by a Service Quality"
@@ -29571,6 +29832,26 @@
 ;+		(comment "")
 		(type INSTANCE)
 ;+		(allowed-classes Control_Assessment)
+		(create-accessor read-write)))
+
+(defclass Technology_Relation "Abstract base class of relationship / link classes related to elements in the Technology Layer of the meta model."
+	(is-a EA_Relation)
+	(role abstract))
+
+(defclass TECH_NODE_TO_TECH_NODE_CONNECTION "Defines a connection between Technology Nodes"
+	(is-a Technology_Relation)
+	(role concrete)
+	(single-slot tech_node_to_tech_node_to_tech_node
+;+		(comment "The Technology Node to which the connection is established")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tech_node_to_tech_node_from_tech_node
+;+		(comment "The Technology Node from which the connection is established")
+		(type INSTANCE)
+;+		(allowed-classes Technology_Node)
+;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
 (defclass %3AEA_Graph_Relation "Abstract super class for EA Relationships used on graphical forms. Every :EA_Graph_Relation class has a FROM and a TO slot to relate instances of the meta classes. Every :EA_Graph_Relation has a NAME"
@@ -30556,7 +30837,7 @@
 ;+		(comment "Slot to hold the FROM side of the relationship. Always an instance of a Software Component Usage")
 		(type INSTANCE)
 ;+		(allowed-classes Software_Component_Usage)
-;+		(cardinality 1 1)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot %3ATO
 ;+		(comment "Slot to hold the TO side of the relationship. Always an instance of a Software Component Usage.")
